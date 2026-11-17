@@ -66,8 +66,8 @@
         {
           "title": "Horses",
           "image": {
-            "src": "/images/riding-in-the-arena.jpg",
-            "alt": "A rider in a helmet trotting a black horse around the arena"
+            "src": "/images/ponies-eating-hay.jpg",
+            "alt": "Ponies eating hay side by side in the stable"
           },
           "points": [
             "Horse Riding, All Levels",
@@ -84,7 +84,7 @@
         {
           "title": "Outdoor Learning",
           "image": {
-            "src": "/images/fields-above-bathford.jpg",
+            "src": "/images/woodland-path.jpg",
             "alt": "A wide green field with a mown path and trees under a cloudy sky"
           },
           "points": [
@@ -103,7 +103,7 @@
         {
           "title": "Creative Arts",
           "image": {
-            "src": "/images/art-room-paints.jpg",
+            "src": "/images/art-room-wide.jpg",
             "alt": "Bright paintings on clipboards above white drawers and jars of pens in the art room"
           },
           "points": [
