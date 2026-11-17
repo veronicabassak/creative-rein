@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import type { SectionOf } from '@/content.config';
-import { resolveImage } from '@/lib/images';
+import { resolveImage, focusStyle } from '@/lib/images';
 import { getUpcomingEvents, formatDay, formatTimeRange } from '@/lib/events';
 
 type Props = SectionOf<'hero'>;
@@ -27,6 +27,7 @@ const [next] = showNextEvent ? await getUpcomingEvents(1) : [];
               class="door-top"
               src={photo}
               alt={image.alt}
+              style={focusStyle(image.focus)}
               widths={[420, 640, 840]}
               sizes="(min-width: 56rem) 26rem, 100vw"
               loading="eager"
@@ -91,6 +92,7 @@ const [next] = showNextEvent ? await getUpcomingEvents(1) : [];
             class="page-photo"
             src={photo}
             alt={image.alt}
+            style={focusStyle(image.focus)}
             widths={[480, 720, 960, 1280]}
             sizes="(min-width: 56rem) 40rem, 100vw"
             loading="eager"
@@ -278,8 +280,8 @@ const [next] = showNextEvent ? await getUpcomingEvents(1) : [];
     }
 
     .hero--page :global(.page-photo) {
-      aspect-ratio: 5 / 4;
-      max-height: 34rem;
+      aspect-ratio: 1 / 1;
+      max-height: 36rem;
     }
   }
 </style>

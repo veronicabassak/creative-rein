@@ -61,6 +61,14 @@ running `npm run dev`.
 `public/_redirects` sends the old Hostinger page addresses (e.g. /homeschooling)
 to the new pages, so links people have saved still work.
 
+## Photos
+
+Put new photos in `src/assets/images/` and refer to them in the page files as
+`"/images/file-name.jpg"`. Only the file name has to match.
+
+If a photo gets cropped badly (heads cut off), add `"focus": "top"` next to its
+`src` and `alt`. `"bottom"` and `"center"` also work.
+
 ## Events
 
 Events that have finished are left out when the site builds. The Book button

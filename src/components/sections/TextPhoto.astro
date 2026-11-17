@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import type { SectionOf } from '@/content.config';
-import { resolveImage } from '@/lib/images';
+import { resolveImage, focusStyle } from '@/lib/images';
 import Paragraphs from '@/components/Paragraphs.astro';
 
 type Props = SectionOf<'textPhoto'>;
@@ -27,6 +27,7 @@ const photo = image ? resolveImage(image.src) : undefined;
             class="photo"
             src={photo}
             alt={image.alt}
+            style={focusStyle(image.focus)}
             widths={[480, 720, 1040]}
             sizes="(min-width: 56rem) 36rem, 100vw"
           />
@@ -37,6 +38,7 @@ const photo = image ? resolveImage(image.src) : undefined;
                   class="photo-small"
                   src={resolveImage(extra.src)}
                   alt={extra.alt}
+                  style={focusStyle(extra.focus)}
                   widths={[320, 480, 640]}
                   sizes="(min-width: 56rem) 18rem, 50vw"
                 />

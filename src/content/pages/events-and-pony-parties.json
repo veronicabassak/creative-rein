@@ -54,7 +54,10 @@
         }
       ],
       "note": "Prices start from £175 with Bugsy, our lead Shetland.",
-      "link": { "label": "Ask about a party date", "href": "/contact/" }
+      "link": {
+        "label": "Ask about a party date",
+        "href": "/contact/"
+      }
     },
     {
       "_template": "textPhoto",
@@ -72,8 +75,9 @@
           "alt": "A jar of paintbrushes and a watercolour palette on a straw bale"
         },
         {
-          "src": "/images/girl-greeting-black-pony.jpg",
-          "alt": "A girl greeting a black pony in the yard"
+          "src": "/images/girl-laughing-with-a-horse.jpeg",
+          "alt": "A little girl in a spotty coat laughing next to a black horse",
+          "focus": "top"
         }
       ],
       "imageSide": "right",
@@ -112,13 +116,19 @@
       },
       "imageSide": "left",
       "background": "oat",
-      "link": { "label": "Ask about a voucher", "href": "/contact/" }
+      "link": {
+        "label": "Ask about a voucher",
+        "href": "/contact/"
+      }
     },
     {
       "_template": "bookingBanner",
       "heading": "Planning a party or after a voucher?",
       "text": "Tell us the date you have in mind and how many children are coming.",
-      "button": { "label": "Get in touch", "href": "/contact/" },
+      "button": {
+        "label": "Get in touch",
+        "href": "/contact/"
+      },
       "showContact": true
     }
   ]

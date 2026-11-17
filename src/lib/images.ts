@@ -22,3 +22,10 @@ export function resolveImage(src: string): ImageMetadata {
   }
   return found;
 }
+
+const focusPositions = { top: '50% 12%', center: '50% 50%', bottom: '50% 88%' } as const;
+
+/** Inline style for a photo's crop focus, or undefined to use the component's default. */
+export function focusStyle(focus?: keyof typeof focusPositions): string | undefined {
+  return focus ? `object-position: ${focusPositions[focus]}` : undefined;
+}

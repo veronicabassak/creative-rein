@@ -49,8 +49,8 @@
           "alt": "A jar of paintbrushes and a watercolour palette on a straw bale beside a red girth"
         },
         {
-          "src": "/images/woodland-path.jpg",
-          "alt": "A path through a green tunnel of trees"
+          "src": "/images/berries-woods.jpeg",
+          "alt": "Bright red hawthorn berries among green leaves"
         }
       ],
       "imageSide": "right",
@@ -85,7 +85,7 @@
           "title": "Outdoor Learning",
           "image": {
             "src": "/images/woodland-path.jpg",
-            "alt": "A wide green field with a mown path and trees under a cloudy sky"
+            "alt": "A path through a green tunnel of trees"
           },
           "points": [
             "Planting & Growing",
@@ -133,7 +133,10 @@
       },
       "imageSide": "right",
       "background": "plain",
-      "link": { "label": "More about Home-Ed Club", "href": "/home-ed-club/" }
+      "link": {
+        "label": "More about Home-Ed Club",
+        "href": "/home-ed-club/"
+      }
     },
     {
       "_template": "textPhoto",
@@ -147,7 +150,10 @@
       },
       "imageSide": "left",
       "background": "oat",
-      "link": { "label": "More about alternative provision", "href": "/alternative-provision/" }
+      "link": {
+        "label": "More about alternative provision",
+        "href": "/alternative-provision/"
+      }
     },
     {
       "_template": "textPhoto",
@@ -161,7 +167,10 @@
       },
       "imageSide": "right",
       "background": "plain",
-      "link": { "label": "More about Little Rein Club", "href": "/little-rein-club/" }
+      "link": {
+        "label": "More about Little Rein Club",
+        "href": "/little-rein-club/"
+      }
     },
     {
       "_template": "gallery",
@@ -176,13 +185,14 @@
         },
         {
           "src": "/images/quaver.jpeg",
-          "alt": "A black and white pony looking out of its stable",
+          "alt": "Quaver, a black pony with a white star, looking out over the stable door",
           "name": "Quaver"
         },
         {
           "src": "/images/cathy-and-charlie.jpg",
           "alt": "Cathy and Charlie smiling with their arms around each other in front of the stables",
-          "name": "Cathy & Charlie"
+          "name": "Cathy & Charlie",
+          "focus": "top"
         },
         {
           "src": "/images/peach.jpg",
@@ -201,16 +211,16 @@
       "layout": "strip",
       "items": [
         {
+          "src": "/images/ella-boy-peach-horse.jpeg",
+          "alt": "Two children in the yard with a dark horse, Peach the chow chow and a little black dog"
+        },
+        {
+          "src": "/images/three-horses-eating.jpeg",
+          "alt": "Three horses eating from buckets outside the stables"
+        },
+        {
           "src": "/images/pony-resting-view.jpg",
           "alt": "A black pony lying down in the paddock, with Bathford and the valley behind"
-        },
-        {
-          "src": "/images/ponies-eating-hay.jpg",
-          "alt": "Two horses eating hay side by side in the stable"
-        },
-        {
-          "src": "/images/tack-room.jpg",
-          "alt": "Saddles, saddle pads and red rugs hanging in the wooden tack room"
         }
       ]
     },
@@ -219,13 +229,19 @@
       "id": "whats-on",
       "heading": "What's on",
       "limit": 3,
-      "moreLink": { "label": "All events and pony parties", "href": "/events-and-pony-parties/" }
+      "moreLink": {
+        "label": "All events and pony parties",
+        "href": "/events-and-pony-parties/"
+      }
     },
     {
       "_template": "bookingBanner",
       "heading": "Not sure what would suit your child?",
       "text": "Tell us a bit about them and we will suggest where to start.",
-      "button": { "label": "Get in touch", "href": "/contact/" },
+      "button": {
+        "label": "Get in touch",
+        "href": "/contact/"
+      },
       "showContact": true
     }
   ]

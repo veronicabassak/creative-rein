@@ -34,7 +34,10 @@
       ],
       "imageSide": "right",
       "background": "plain",
-      "link": { "label": "Ask about the next term", "href": "/contact/" }
+      "link": {
+        "label": "Ask about the next term",
+        "href": "/contact/"
+      }
     },
     {
       "_template": "textPhoto",
@@ -87,23 +90,26 @@
       },
       "imageSide": "right",
       "background": "plain",
-      "link": { "label": "Mindfulness & Wellbeing", "href": "/mindfulness-and-wellbeing/" }
+      "link": {
+        "label": "Mindfulness & Wellbeing",
+        "href": "/mindfulness-and-wellbeing/"
+      }
     },
     {
       "_template": "gallery",
       "layout": "strip",
       "items": [
         {
-          "src": "/images/girl-greeting-black-pony.jpg",
-          "alt": "A girl leaning in to greet a black pony in the yard"
+          "src": "/images/ella-with-dogs-and-horse.jpeg",
+          "alt": "A girl in the yard with a dark horse, Peach the chow chow and two other dogs"
         },
         {
           "src": "/images/tack-room-pony.jpg",
           "alt": "A brown and white pony with its nose in a bucket, next to saddles and red rugs in the tack room"
         },
         {
-          "src": "/images/saddle-on-fence.jpg",
-          "alt": "A brown saddle on a white pad resting on a fence, with the arena behind"
+          "src": "/images/path-nature.jpeg",
+          "alt": "A narrow footpath between hedges, opening onto fields and hills"
         }
       ]
     },
@@ -111,7 +117,10 @@
       "_template": "bookingBanner",
       "heading": "Would your child like to join?",
       "text": "Tell us your child's age and what they enjoy, and we will tell you about the next term.",
-      "button": { "label": "Get in touch", "href": "/contact/" },
+      "button": {
+        "label": "Get in touch",
+        "href": "/contact/"
+      },
       "showContact": true
     }
   ]

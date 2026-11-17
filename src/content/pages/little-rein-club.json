@@ -103,12 +103,13 @@
       "layout": "strip",
       "items": [
         {
-          "src": "/images/girl-greeting-black-pony.jpg",
-          "alt": "A girl leaning in to greet a black pony in the yard"
+          "src": "/images/girl-laughing-with-a-horse.jpeg",
+          "alt": "A little girl in a spotty coat and wellies laughing next to a black horse",
+          "focus": "top"
         },
         {
-          "src": "/images/ponies-eating-hay.jpg",
-          "alt": "Two horses eating hay side by side in the stable"
+          "src": "/images/toddler-with-pony-sunset.jpeg",
+          "alt": "A toddler holding a wheelbarrow while a dark horse sniffs them, with the sun setting over the yard"
         },
         {
           "src": "/images/art-room-wide.jpg",
@@ -120,7 +121,10 @@
       "_template": "bookingBanner",
       "heading": "Bring your little one to meet the ponies",
       "text": "Ask us about the next toddler, pre-school or reception session.",
-      "button": { "label": "Get in touch", "href": "/contact/" },
+      "button": {
+        "label": "Get in touch",
+        "href": "/contact/"
+      },
       "showContact": true
     }
   ]

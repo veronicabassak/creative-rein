@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import type { SectionOf } from '@/content.config';
-import { resolveImage } from '@/lib/images';
+import { resolveImage, focusStyle } from '@/lib/images';
 
 type Props = SectionOf<'list'>;
 
@@ -25,6 +25,7 @@ const ListTag = style === 'steps' ? 'ol' : 'ul';
                 class="item-photo"
                 src={resolveImage(item.image.src)}
                 alt={item.image.alt}
+                style={focusStyle(item.image.focus)}
                 widths={[360, 540, 720]}
                 sizes="(min-width: 56rem) 24rem, 100vw"
               />

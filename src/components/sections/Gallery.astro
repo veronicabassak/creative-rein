@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import type { SectionOf } from '@/content.config';
-import { resolveImage } from '@/lib/images';
+import { resolveImage, focusStyle } from '@/lib/images';
 
 type Props = SectionOf<'gallery'>;
 
@@ -30,6 +30,7 @@ const { id, heading, intro, layout, items } = Astro.props;
               <Image
                 src={resolveImage(item.src)}
                 alt={item.alt}
+                style={focusStyle(item.focus)}
                 widths={[320, 480, 720, 1040]}
                 sizes={
                   layout === 'mosaic' && index === 0

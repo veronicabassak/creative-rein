@@ -17,6 +17,11 @@ import { z } from 'astro/zod';
 const image = z.object({
   src: z.string(),
   alt: z.string(),
+  /**
+   * Which part of the photo to keep when it has to be cropped to fit.
+   * "top" keeps heads in portraits; leave it out for the middle.
+   */
+  focus: z.enum(['top', 'center', 'bottom']).optional(),
 });
 
 const link = z.object({
