@@ -5,11 +5,11 @@
     {
       "_template": "hero",
       "variant": "home",
-      "heading": "Ponies, fresh air and making things, on a hill above Bath.",
+      "heading": "Equine Learning. Outdoor Education. Creative Arts on a hill above Bath.",
       "lede": "Small groups and 1-to-1 sessions for children aged 5 to 18, with toddler mornings for the little ones. No horse experience needed.",
       "image": {
         "src": "/images/girl-horse-black-and-white.jpeg",
-        "alt": "A brown and white pony looking out over a wooden stable door"
+        "alt": "A girl with a horse"
       },
       "paths": [
         {
