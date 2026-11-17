@@ -1,0 +1,118 @@
+{
+  "title": "Home-Ed Club in Bath: horses, outdoor learning and creative arts",
+  "description": "A weekly Home Education Club near Bath for children aged 5 to 18, combining horse management and riding, outdoor learning and creative art and design, in six-week terms.",
+  "sections": [
+    {
+      "_template": "hero",
+      "variant": "page",
+      "heading": "Home Education Club",
+      "tagline": "Small groups, meaningful experiences",
+      "lede": "Here at Creative Rein, time spent with us is so much more than learning about horses, creative art and the outdoors. It's about building a true connection with our wonderful horses, discovering new skills, exploring boundaries and feeling part of our family here.",
+      "image": {
+        "src": "/images/art-room-wide.jpg",
+        "alt": "The wooden art room, with a long table, chairs and paintings pegged along the wall"
+      }
+    },
+    {
+      "_template": "textPhoto",
+      "id": "sessions",
+      "heading": "Term-time sessions for ages 5 to 18",
+      "body": "We offer term-time sessions where children can spend a morning or afternoon covering horse management and riding, outdoor learning, and creative art and design. Weekly sessions run in six-week terms, with a final project combining all elements of learning.\n\nEach session has its own theme, with activities adapted to suit different ages and interests.\n\nOur small-scale setting offers a rare, personal way for children to enjoy the world of horses, explore the outdoors, discover new interests and express themselves through creative arts and practical activities.\n\nNo previous horse experience is needed and riding is entirely optional. It's simply about being you.",
+      "image": {
+        "src": "/images/grooming-kit.jpg",
+        "alt": "A blue grooming box full of brushes on a straw bale, with a bit and red girth beside it"
+      },
+      "moreImages": [
+        {
+          "src": "/images/riding-in-the-arena.jpg",
+          "alt": "A rider trotting a black horse around the arena"
+        },
+        {
+          "src": "/images/paintbrushes-on-straw.jpg",
+          "alt": "A jar of paintbrushes and a watercolour palette on a straw bale"
+        }
+      ],
+      "imageSide": "right",
+      "background": "plain",
+      "link": { "label": "Ask about the next term", "href": "/contact/" }
+    },
+    {
+      "_template": "textPhoto",
+      "id": "education",
+      "heading": "Education",
+      "tagline": "The freedom to experiment",
+      "body": "A woodland walk becomes a treasure hunt for colours, textures and shapes. Fallen leaves become the inspiration for a piece of art.\n\nWe teach all ages across a broad spectrum of subjects.",
+      "image": {
+        "src": "/images/woodland-path.jpg",
+        "alt": "A path through a green tunnel of trees"
+      },
+      "imageSide": "left",
+      "background": "oat"
+    },
+    {
+      "_template": "list",
+      "id": "subjects",
+      "heading": "What children learn",
+      "style": "pairs",
+      "background": "oat",
+      "items": [
+        {
+          "title": "English & Literacy",
+          "text": "Children write observations, keep journals and read new information, using varied vocabulary."
+        },
+        {
+          "title": "Maths & Numeracy",
+          "text": "Measuring, counting, weighing, understanding time, and comparing sizes, shapes, patterns and quantities."
+        },
+        {
+          "title": "Science",
+          "text": "Animal biology, habitats, nutrition, life cycles, the senses, weather systems, plants and ecosystems."
+        },
+        {
+          "title": "Geography",
+          "text": "Maps, directions, landscapes, environments and seasonal changes."
+        }
+      ],
+      "note": "Children will develop independence, problem solving and friendships in a welcoming small-group environment. We want everyone to feel comfortable, included and able to enjoy their unique time with us."
+    },
+    {
+      "_template": "textPhoto",
+      "id": "mindfulness",
+      "heading": "Mindfulness",
+      "tagline": "The freedom to be you, and know that's OK",
+      "body": "If your child finds busy environments overwhelming, Creative Rein offers quiet connection sessions: mindful grooming, pony observation, grounding, and space to notice textures, sounds and sensations.\n\nWe actively encourage children to use their own coping mechanisms, and we can support them further with mindful walks, creative reflection and time connecting with the ponies.",
+      "image": {
+        "src": "/images/pony-resting-view.jpg",
+        "alt": "A black pony lying down in the paddock, with Bathford and the valley behind"
+      },
+      "imageSide": "right",
+      "background": "plain",
+      "link": { "label": "Mindfulness & Wellbeing", "href": "/mindfulness-and-wellbeing/" }
+    },
+    {
+      "_template": "gallery",
+      "layout": "strip",
+      "items": [
+        {
+          "src": "/images/girl-greeting-black-pony.jpg",
+          "alt": "A girl leaning in to greet a black pony in the yard"
+        },
+        {
+          "src": "/images/tack-room-pony.jpg",
+          "alt": "A brown and white pony with its nose in a bucket, next to saddles and red rugs in the tack room"
+        },
+        {
+          "src": "/images/saddle-on-fence.jpg",
+          "alt": "A brown saddle on a white pad resting on a fence, with the arena behind"
+        }
+      ]
+    },
+    {
+      "_template": "bookingBanner",
+      "heading": "Would your child like to join?",
+      "text": "Tell us your child's age and what they enjoy, and we will tell you about the next term.",
+      "button": { "label": "Get in touch", "href": "/contact/" },
+      "showContact": true
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+---
+import type { Section } from '@/content.config';
+import Hero from './sections/Hero.astro';
+import TextPhoto from './sections/TextPhoto.astro';
+import List from './sections/List.astro';
+import EventList from './sections/EventList.astro';
+import Gallery from './sections/Gallery.astro';
+import PriceList from './sections/PriceList.astro';
+import BookingBanner from './sections/BookingBanner.astro';
+import ContactForm from './sections/ContactForm.astro';
+
+/**
+ * Turns a page's list of sections into components.
+ * To add a new kind of section: add its schema to src/content.config.ts,
+ * create the component in ./sections, and add one line here.
+ */
+interface Props {
+  sections: Section[];
+}
+
+const { sections } = Astro.props;
+---
+
+{
+  sections.map((section) => {
+    switch (section._template) {
+      case 'hero':
+        return <Hero {...section} />;
+      case 'textPhoto':
+        return <TextPhoto {...section} />;
+      case 'list':
+        return <List {...section} />;
+      case 'eventList':
+        return <EventList {...section} />;
+      case 'gallery':
+        return <Gallery {...section} />;
+      case 'priceList':
+        return <PriceList {...section} />;
+      case 'bookingBanner':
+        return <BookingBanner {...section} />;
+      case 'contactForm':
+        return <ContactForm {...section} />;
+    }
+  })
+}

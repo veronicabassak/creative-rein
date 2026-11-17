@@ -1,0 +1,171 @@
+---
+import type { SectionOf } from '@/content.config';
+import { getSite, telHref } from '@/lib/site';
+
+type Props = SectionOf<'contactForm'>;
+
+const { id, heading, intro, successPath } = Astro.props;
+const site = await getSite();
+
+/*
+ * Netlify Forms: Netlify finds this form when the site is deployed and stores
+ * every message in the Netlify dashboard (Forms tab), where you can turn on
+ * email notifications to Charlie. Sending does nothing on `npm run dev`.
+ */
+---
+
+<section id={id} class="section contact-form">
+  <div class="container layout">
+    <div class="head">
+      <h2>{heading}</h2>
+      {intro && <p>{intro}</p>}
+      <ul class="direct">
+        <li>Call or text <a href={telHref(site.phone)}>{site.phone}</a></li>
+        <li>Email <a href={`mailto:${site.email}`}>{site.email}</a></li>
+      </ul>
+    </div>
+
+    <form
+      name="contact"
+      method="POST"
+      action={successPath}
+      data-netlify="true"
+      netlify-honeypot="company"
+    >
+      <input type="hidden" name="form-name" value="contact" />
+      <p class="trap">
+        <label>Leave this empty: <input name="company" tabindex="-1" autocomplete="off" /></label>
+      </p>
+
+      <div class="field">
+        <label for="cf-name">Your name</label>
+        <input id="cf-name" name="name" type="text" autocomplete="name" required />
+      </div>
+
+      <div class="field">
+        <label for="cf-email">Email</label>
+        <input id="cf-email" name="email" type="email" autocomplete="email" required />
+      </div>
+
+      <div class="field">
+        <label for="cf-phone">Phone <span class="optional">(optional)</span></label>
+        <input id="cf-phone" name="phone" type="tel" autocomplete="tel" />
+      </div>
+
+      <div class="field">
+        <label for="cf-about">What are you interested in?</label>
+        <select id="cf-about" name="interested-in">
+          <option>Home-Ed Club</option>
+          <option>Alternative provision</option>
+          <option>Little Rein Club (toddlers, pre-school and reception)</option>
+          <option>Mindfulness and wellbeing sessions</option>
+          <option>A pony party or event</option>
+          <option>Gift vouchers</option>
+          <option>Something else</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="cf-message">Message</label>
+        <p class="hint" id="cf-message-hint">
+          Your child's age, what they enjoy, and anything that would help us get it right for them.
+        </p>
+        <textarea id="cf-message" name="message" rows="6" aria-describedby="cf-message-hint" required
+        ></textarea>
+      </div>
+
+      <button class="button" type="submit">Send message</button>
+    </form>
+  </div>
+</section>
+
+<style>
+  .layout {
+    display: grid;
+    gap: 2.5rem;
+  }
+
+  .head {
+    display: grid;
+    gap: 1rem;
+    align-content: start;
+    max-width: var(--measure);
+  }
+
+  .direct {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .direct a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.75rem;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+  }
+
+  form {
+    display: grid;
+    gap: 1.25rem;
+    max-width: 36rem;
+  }
+
+  .field {
+    display: grid;
+    gap: 0.375rem;
+  }
+
+  label {
+    font-weight: 700;
+  }
+
+  .optional,
+  .hint {
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    min-height: 3rem;
+    padding: 0.625rem 0.875rem;
+    border: 2px solid #9a9179;
+    border-radius: var(--radius);
+    background: var(--paper);
+    color: var(--ink);
+    font: inherit;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
+    border-color: var(--forest);
+    outline: 3px solid var(--tan);
+    outline-offset: 1px;
+  }
+
+  button {
+    justify-self: start;
+    cursor: pointer;
+  }
+
+  .trap {
+    position: absolute;
+    left: -9999px;
+  }
+
+  @media (min-width: 56rem) {
+    .layout {
+      grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr);
+      gap: clamp(2.5rem, 6vw, 5rem);
+    }
+  }
+</style>

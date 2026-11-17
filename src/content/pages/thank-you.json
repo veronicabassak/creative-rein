@@ -1,0 +1,24 @@
+{
+  "title": "Message sent",
+  "description": "Thank you for getting in touch with Creative Rein.",
+  "noindex": true,
+  "sections": [
+    {
+      "_template": "hero",
+      "variant": "page",
+      "heading": "Thank you, your message has been sent",
+      "lede": "We'll get back to you as soon as we can. If it's urgent, call or text us on 07301 111 842.",
+      "image": {
+        "src": "/images/pony-resting-view.jpg",
+        "alt": "A black pony lying down in the paddock, with Bathford and the valley behind"
+      }
+    },
+    {
+      "_template": "eventList",
+      "id": "whats-on",
+      "heading": "While you're here: what's on",
+      "limit": 3,
+      "moreLink": { "label": "All events and pony parties", "href": "/events-and-pony-parties/" }
+    }
+  ]
+}

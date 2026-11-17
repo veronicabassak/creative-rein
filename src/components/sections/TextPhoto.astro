@@ -1,0 +1,130 @@
+---
+import { Image } from 'astro:assets';
+import type { SectionOf } from '@/content.config';
+import { resolveImage } from '@/lib/images';
+import Paragraphs from '@/components/Paragraphs.astro';
+
+type Props = SectionOf<'textPhoto'>;
+
+const { id, heading, tagline, body, image, moreImages, imageSide, background, link } = Astro.props;
+const photo = image ? resolveImage(image.src) : undefined;
+---
+
+<section id={id} class:list={['section', 'text-photo', `bg-${background}`]}>
+  <div class:list={['container', 'layout', { 'has-photo': photo, 'photo-left': imageSide === 'left' }]}>
+    <div class="text">
+      <div class="heading">
+        <h2>{heading}</h2>
+        {tagline && <p class="tagline">{tagline}</p>}
+      </div>
+      <Paragraphs text={body} />
+      {link && <a class="button button--quiet" href={link.href}>{link.label}</a>}
+    </div>
+    {
+      photo && image && (
+        <div class:list={['photos', { 'has-more': moreImages.length > 0 }]}>
+          <Image
+            class="photo"
+            src={photo}
+            alt={image.alt}
+            widths={[480, 720, 1040]}
+            sizes="(min-width: 56rem) 36rem, 100vw"
+          />
+          {moreImages.length > 0 && (
+            <div class="more">
+              {moreImages.map((extra) => (
+                <Image
+                  class="photo-small"
+                  src={resolveImage(extra.src)}
+                  alt={extra.alt}
+                  widths={[320, 480, 640]}
+                  sizes="(min-width: 56rem) 18rem, 50vw"
+                />
+              ))}
+            </div>
+          )}
+        </div>
+      )
+    }
+  </div>
+</section>
+
+<style>
+  .bg-oat {
+    background: var(--oat-light);
+  }
+
+  .layout {
+    display: grid;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .text {
+    display: grid;
+    gap: 1.5rem;
+    justify-items: start;
+  }
+
+  .heading {
+    display: grid;
+    gap: 0.5rem;
+  }
+
+  h2 {
+    max-width: 22ch;
+  }
+
+  .tagline {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: var(--step-1);
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    color: var(--forest);
+  }
+
+  .photos {
+    display: grid;
+    gap: 0.75rem;
+  }
+
+  .photos :global(.photo) {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: var(--radius-photo);
+  }
+
+  .more {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+
+  .more :global(.photo-small) {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: var(--radius-photo);
+  }
+
+  @media (min-width: 56rem) {
+    .layout.has-photo {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: clamp(2.5rem, 6vw, 5rem);
+    }
+
+    .layout.photo-left .photos {
+      order: -1;
+    }
+
+    .photos :global(.photo) {
+      aspect-ratio: 5 / 4;
+    }
+
+    .photos.has-more :global(.photo) {
+      aspect-ratio: 3 / 2;
+    }
+  }
+</style>

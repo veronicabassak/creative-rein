@@ -1,0 +1,95 @@
+---
+import type { SectionOf } from '@/content.config';
+
+type Props = SectionOf<'priceList'>;
+
+const { id, heading, intro, items, note } = Astro.props;
+---
+
+<section id={id} class="section price-list">
+  <div class="container layout">
+    <div class="head">
+      <h2>{heading}</h2>
+      {intro && <p>{intro}</p>}
+    </div>
+    <div class="body">
+      <dl>
+        {
+          items.map((item) => (
+            <div class="row">
+              <dt>
+                <span class="name">{item.name}</span>
+                {item.detail && <span class="detail">{item.detail}</span>}
+              </dt>
+              <dd>{item.price}</dd>
+            </div>
+          ))
+        }
+      </dl>
+      {note && <p class="note">{note}</p>}
+    </div>
+  </div>
+</section>
+
+<style>
+  .layout {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .head {
+    display: grid;
+    gap: 0.75rem;
+    align-content: start;
+  }
+
+  dl {
+    margin: 0;
+    border-top: 2px solid var(--oat);
+  }
+
+  .row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding-block: 1.125rem;
+    border-bottom: 2px solid var(--oat);
+  }
+
+  .name {
+    display: block;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: var(--step-1);
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: var(--forest);
+  }
+
+  .detail {
+    display: block;
+    font-size: 1rem;
+  }
+
+  dd {
+    flex: none;
+    margin: 0;
+    font-weight: 700;
+    font-size: var(--step-1);
+    white-space: nowrap;
+  }
+
+  .note {
+    margin-top: 1rem;
+    max-width: var(--measure);
+    font-size: 1rem;
+  }
+
+  @media (min-width: 56rem) {
+    .layout {
+      grid-template-columns: 18rem minmax(0, 1fr);
+      gap: clamp(2.5rem, 6vw, 5rem);
+    }
+  }
+</style>

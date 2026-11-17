@@ -1,0 +1,118 @@
+{
+  "title": "Mindfulness and wellbeing with horses near Bath",
+  "description": "Quiet connection, mindful grooming, observation, grounding, mindful walks and creative reflection with the ponies at Creative Rein, near Bath.",
+  "sections": [
+    {
+      "_template": "hero",
+      "variant": "page",
+      "heading": "Mindfulness & Wellbeing",
+      "tagline": "Wellbeing for everyone",
+      "lede": "Creative Rein's entire culture is based around connection, communication, transparency and collaboration.",
+      "image": {
+        "src": "/images/pony-resting-view.jpg",
+        "alt": "A black pony lying down in the paddock, with Bathford and the valley behind"
+      }
+    },
+    {
+      "_template": "textPhoto",
+      "id": "connection",
+      "heading": "We include the ponies",
+      "body": "We can only bring all of these together by working together. We ask the ponies if they are OK, we observe their behaviour, read their movements and communicate accordingly. We include them, involve them and connect.",
+      "image": {
+        "src": "/images/girl-greeting-black-pony.jpg",
+        "alt": "A girl leaning in to greet a black pony in the yard"
+      },
+      "imageSide": "right",
+      "background": "plain"
+    },
+    {
+      "_template": "textPhoto",
+      "id": "his-story",
+      "heading": "Let him into your heart",
+      "body": "All of our horses love humans, even those that have been badly treated.\n\nOur poor ex-racer was forced to race as a one-year-old. When he didn't perform as expected, he was left, moved on and pushed through auctions, as many horses of that age are in the world of racing. I rescued him only three months ago. He had scars, he was neglected and thin, with a sparse coat.\n\nYet now his scars are healing, he follows us around like a dog and likes to be involved in everything. He trusts us and we trust him.\n\nBecause of his experience, he holds a deeper connection with humans. Let him into your heart and he'll let you into his.",
+      "background": "oat"
+    },
+    {
+      "_template": "list",
+      "id": "activities",
+      "heading": "Wellbeing activities",
+      "style": "pairs",
+      "background": "plain",
+      "items": [
+        {
+          "title": "Quiet Connection",
+          "text": "Spending time beside our unique ponies and horses, noticing their breathing, movement and quiet resting habits.",
+          "image": {
+            "src": "/images/ponies-eating-hay.jpg",
+            "alt": "Two horses eating hay side by side"
+          }
+        },
+        {
+          "title": "Mindful Grooming",
+          "text": "Slow, gentle movements. Feel the undulations, the textures, sounds and sensations, but importantly, notice how the horse reacts, softens, enjoys, relaxes and embraces your touch.",
+          "image": {
+            "src": "/images/grooming-kit.jpg",
+            "alt": "A box of grooming brushes"
+          }
+        },
+        {
+          "title": "Observation",
+          "text": "Observation is magical when discovering horses. They communicate angrily, softly, happily or with confusion in a matter of seconds, depending on you, another horse, danger or change. They communicate subtly through their ears, their eyes, posture and movement. Watch them.",
+          "image": {
+            "src": "/images/pony-dark-bay.jpg",
+            "alt": "Poppet looking over her stable door"
+          }
+        },
+        {
+          "title": "Breathing & Grounding",
+          "text": "Grounding yourself is paramount. Touching the warmth of a horse, feeling the muscle, closing your eyes and smelling their skin evokes an immense sense of peace.",
+          "image": {
+            "src": "/images/pony-skewbald.jpg",
+            "alt": "A brown and white pony looking out of its stable"
+          }
+        },
+        {
+          "title": "Mindful Walks",
+          "text": "Wonderful mindful walks in beautiful countryside: gentle rolling hills and woodland paths with a myriad of birds, animals and wild flowers.",
+          "image": {
+            "src": "/images/woodland-path.jpg",
+            "alt": "A woodland path"
+          }
+        },
+        {
+          "title": "Creative Reflection",
+          "text": "Part of our creative arts classroom, or you can enjoy it outside. Draw, paint, sketch, build, create, write or carve: whatever you feel and whatever you want.",
+          "image": {
+            "src": "/images/paintbrushes-on-straw.jpg",
+            "alt": "A jar of paintbrushes on a straw bale"
+          }
+        }
+      ]
+    },
+    {
+      "_template": "gallery",
+      "layout": "mosaic",
+      "items": [
+        {
+          "src": "/images/fields-above-bathford.jpg",
+          "alt": "A wide green field with a mown path and trees under a cloudy sky"
+        },
+        {
+          "src": "/images/pony-walk-lane.jpg",
+          "alt": "Two people leading a brown and white pony down a tree-lined lane"
+        },
+        {
+          "src": "/images/saddle-on-fence.jpg",
+          "alt": "A saddle resting on a fence beside the arena"
+        }
+      ]
+    },
+    {
+      "_template": "bookingBanner",
+      "heading": "Come and spend some quiet time with the ponies",
+      "text": "Wellbeing sessions are arranged individually. Tell us what you are looking for.",
+      "button": { "label": "Get in touch", "href": "/contact/" },
+      "showContact": true
+    }
+  ]
+}

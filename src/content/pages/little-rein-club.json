@@ -1,0 +1,127 @@
+{
+  "title": "Little Rein Club: toddler, pre-school and reception pony sessions near Bath",
+  "description": "Gentle early years pony and craft sessions near Bath for toddlers, pre-school and reception children, combining nature, play, creativity and early learning.",
+  "sections": [
+    {
+      "_template": "hero",
+      "variant": "page",
+      "heading": "Little Rein Club",
+      "tagline": "Toddler, Pre-School & Reception",
+      "lede": "We want your child to feel safe and confident around horses: comfortable touching them, interacting with them, or simply being in their presence.",
+      "image": {
+        "src": "/images/toddler-and-pony.jpg",
+        "alt": "A toddler in a bobble hat standing at a stable door while a black pony leans down to sniff their hat"
+      }
+    },
+    {
+      "_template": "textPhoto",
+      "id": "about",
+      "heading": "Gentle early years sessions",
+      "body": "At Creative Rein we offer gentle early years equine and craft programmes for little ones, combining nature, play, creativity and early learning.\n\nWe bring together pony experiences, outdoor adventures, indoor crafts when it's cold, creative activities and opportunities to learn through play.\n\nWith the Little Rein Club, children will meet our friendly ponies, learn about pony care, enjoy gentle grooming, explore different textures and begin to understand how to treat animals with kindness.",
+      "image": {
+        "src": "/images/pony-dark-bay.jpg",
+        "alt": "Poppet, a dark bay horse with a white star, resting her head over the stable door"
+      },
+      "moreImages": [
+        {
+          "src": "/images/grooming-kit.jpg",
+          "alt": "A blue grooming box full of soft brushes on a straw bale"
+        },
+        {
+          "src": "/images/paintbrushes-on-straw.jpg",
+          "alt": "A jar of paintbrushes and a watercolour palette on a straw bale"
+        }
+      ],
+      "imageSide": "right",
+      "background": "plain"
+    },
+    {
+      "_template": "list",
+      "id": "sessions",
+      "heading": "Sessions for little ones",
+      "style": "columns",
+      "background": "oat",
+      "items": [
+        {
+          "title": "Your child will enjoy",
+          "points": [
+            "Outdoor Adventures & Nature",
+            "Creative Arts, Crafts & Messy Making",
+            "Early Learning & Discovery",
+            "Friendship & Social Development"
+          ]
+        },
+        {
+          "title": "Sessions",
+          "points": [
+            "Parent & Child Toddler Sessions",
+            "Pre-School Pony & Nature Mornings",
+            "Reception-Age Outdoor Learning Activities"
+          ]
+        }
+      ]
+    },
+    {
+      "_template": "list",
+      "id": "activities",
+      "heading": "Our activities include",
+      "style": "pairs",
+      "background": "plain",
+      "items": [
+        {
+          "title": "Communication & Language",
+          "text": "Storytelling, listening, talking and expressing ideas."
+        },
+        {
+          "title": "Early Literacy",
+          "text": "Looking at books, using sounds, mark making and early writing experiences."
+        },
+        {
+          "title": "Early Maths",
+          "text": "Counting, sorting, matching, measuring and using shapes and patterns."
+        },
+        {
+          "title": "Physical Development",
+          "text": "Movement, balance, coordination, fine motor skills and outdoor play."
+        },
+        {
+          "title": "Understanding the World",
+          "text": "Learning with animals and looking at nature, seasons, habitats and the environment."
+        },
+        {
+          "title": "Personal, Social & Emotional Development",
+          "text": "Building confidence, independence, friendships, sharing and understanding feelings."
+        },
+        {
+          "title": "Creative Expression",
+          "text": "Enjoying music and art, using imagination and design, and exploring different materials."
+        }
+      ]
+    },
+    {
+      "_template": "gallery",
+      "layout": "strip",
+      "items": [
+        {
+          "src": "/images/girl-greeting-black-pony.jpg",
+          "alt": "A girl leaning in to greet a black pony in the yard"
+        },
+        {
+          "src": "/images/ponies-eating-hay.jpg",
+          "alt": "Two horses eating hay side by side in the stable"
+        },
+        {
+          "src": "/images/art-room-wide.jpg",
+          "alt": "The wooden art room, with a long table and paintings pegged along the wall"
+        }
+      ]
+    },
+    {
+      "_template": "bookingBanner",
+      "heading": "Bring your little one to meet the ponies",
+      "text": "Ask us about the next toddler, pre-school or reception session.",
+      "button": { "label": "Get in touch", "href": "/contact/" },
+      "showContact": true
+    }
+  ]
+}

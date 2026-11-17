@@ -1,0 +1,183 @@
+/* Design tokens: "Bathford Hill". Change a value here and it changes everywhere. */
+:root {
+  --limewash: #f6f5ef;
+  --paper: #fffdf8;
+  --oat: #ddd3be;
+  --oat-light: #ece7da;
+  --sage: #8ea38e;
+  --sage-light: #c4cfc0;
+  --forest: #22382c;
+  --ink: #1d2b23;
+  --tan: #8a5a26;
+
+  --font-display: 'Bricolage Grotesque Variable', 'Bricolage Grotesque', system-ui, sans-serif;
+  --font-body: 'Atkinson Hyperlegible', system-ui, sans-serif;
+
+  --step--1: 0.9375rem;
+  --step-0: 1.125rem;
+  --step-1: 1.375rem;
+  --step-2: clamp(1.625rem, 1.3rem + 1.4vw, 2.25rem);
+  --step-3: clamp(2.25rem, 1.4rem + 3.6vw, 3.875rem);
+
+  --space-section: clamp(2.75rem, 2rem + 3vw, 4.5rem);
+  --gutter: clamp(1.25rem, 0.5rem + 3vw, 4.5rem);
+  --measure: 34rem;
+  --radius: 0.5rem;
+  --radius-photo: 0.875rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 1.5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--limewash);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+  line-height: 1.55;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  color: var(--forest);
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: var(--step-3);
+  line-height: 1.04;
+  letter-spacing: -0.025em;
+}
+
+h2 {
+  font-size: var(--step-2);
+}
+
+h3 {
+  font-size: var(--step-1);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--forest);
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 0.09em;
+}
+
+a:hover {
+  color: var(--tan);
+}
+
+:focus-visible {
+  outline: 3px solid var(--tan);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.container {
+  width: 100%;
+  max-width: 76rem;
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.section {
+  padding-block: var(--space-section);
+}
+
+.prose {
+  display: grid;
+  gap: 1em;
+  max-width: var(--measure);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  padding: 0.5rem 1.375rem;
+  border: 2px solid var(--forest);
+  border-radius: var(--radius);
+  background: var(--forest);
+  color: var(--limewash);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--paper);
+}
+
+.button--quiet {
+  background: transparent;
+  color: var(--forest);
+}
+
+.button--quiet:hover {
+  background: var(--forest);
+  color: var(--limewash);
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 10;
+  padding: 0.75rem 1rem;
+  background: var(--forest);
+  color: var(--limewash);
+  border-radius: var(--radius);
+}
+
+.skip-link:focus {
+  top: 1rem;
+  color: var(--limewash);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}

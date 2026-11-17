@@ -1,0 +1,196 @@
+---
+import { Image } from 'astro:assets';
+import logo from '@/assets/images/logo.png';
+import { getSite } from '@/lib/site';
+
+const site = await getSite();
+const current = Astro.url.pathname;
+---
+
+<header class="site-header">
+  <div class="container bar">
+    <a class="logo" href="/" aria-label={`${site.name} home`}>
+      <Image src={logo} alt={`${site.name}. ${site.tagline}`} width={300} loading="eager" />
+    </a>
+
+    <nav class="nav-wide" aria-label="Main">
+      <ul>
+        {
+          site.nav.map((item) => (
+            <li>
+              <a href={item.href} aria-current={current === item.href ? 'page' : undefined}>
+                {item.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+
+    <div class="actions">
+      <a class="button book" href={site.bookButton.href}>{site.bookButton.label}</a>
+      <details class="menu">
+        <summary>Menu</summary>
+        <nav aria-label="Main, small screens">
+          <ul>
+            {
+              site.nav.map((item) => (
+                <li>
+                  <a href={item.href} aria-current={current === item.href ? 'page' : undefined}>
+                    {item.label}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </nav>
+      </details>
+    </div>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    position: relative;
+    background: var(--limewash);
+  }
+
+  .bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-block: 0.875rem;
+  }
+
+  .logo {
+    flex: none;
+    display: block;
+  }
+
+  .logo img {
+    width: clamp(6.5rem, 5rem + 6vw, 9.5rem);
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .nav-wide {
+    display: none;
+    margin-left: auto;
+  }
+
+  .nav-wide ul {
+    display: flex;
+    gap: clamp(1rem, 1.6vw, 1.75rem);
+  }
+
+  .nav-wide a,
+  .menu a {
+    color: var(--ink);
+    text-decoration: none;
+  }
+
+  .nav-wide a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.75rem;
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+
+  .nav-wide a:hover,
+  .menu a:hover {
+    color: var(--tan);
+  }
+
+  .nav-wide a[aria-current='page'],
+  .menu a[aria-current='page'] {
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: var(--sage);
+    text-decoration-thickness: 3px;
+    text-underline-offset: 0.4em;
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .book {
+    min-height: 2.75rem;
+    padding-inline: 0.75rem;
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+
+  .menu summary {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.75rem;
+    padding: 0 0.75rem;
+    border: 2px solid var(--forest);
+    border-radius: var(--radius);
+    color: var(--forest);
+    font-weight: 700;
+    font-size: 1.0625rem;
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .menu summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .menu[open] summary {
+    background: var(--forest);
+    color: var(--limewash);
+  }
+
+  .menu nav {
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    top: 100%;
+    padding: 0.5rem var(--gutter) 1.25rem;
+    background: var(--limewash);
+    border-bottom: 2px solid var(--oat);
+  }
+
+  .menu li + li {
+    border-top: 2px solid var(--oat);
+  }
+
+  .menu a {
+    display: flex;
+    align-items: center;
+    min-height: 3.5rem;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: var(--forest);
+  }
+
+  @media (min-width: 70rem) {
+    .nav-wide {
+      display: block;
+    }
+
+    .menu {
+      display: none;
+    }
+
+    .book {
+      min-height: 3rem;
+      padding-inline: 1.375rem;
+      margin-left: 1.25rem;
+      font-size: 1.0625rem;
+    }
+  }
+</style>

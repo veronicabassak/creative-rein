@@ -1,0 +1,179 @@
+---
+import type { SectionOf } from '@/content.config';
+import { getUpcomingEvents, formatDay, formatTimeRange } from '@/lib/events';
+
+type Props = SectionOf<'eventList'>;
+
+const { id, heading, intro, limit, emptyText, moreLink } = Astro.props;
+const events = await getUpcomingEvents(limit);
+---
+
+<section id={id} class="section event-list">
+  <div class="container">
+    <div class="head">
+      <h2>{heading}</h2>
+      {intro && <p>{intro}</p>}
+    </div>
+
+    {
+      events.length > 0 ? (
+        <ol class="events">
+          {events.map((event) => {
+            const day = formatDay(event.data.start);
+            const time = formatTimeRange(event.data.start, event.data.end);
+            const [weekday, ...rest] = day.split(' ');
+            return (
+              <li class="event">
+                <p class="when">
+                  <span class="weekday">{weekday}</span>
+                  <span class="date">{rest.join(' ')}</span>
+                  <span class="time">{time}</span>
+                </p>
+                <div class="what">
+                  <h3>{event.data.title}</h3>
+                  <p class="where">{event.data.location}</p>
+                  {event.data.includes.length > 0 && (
+                    <ul class="includes" aria-label="What's included">
+                      {event.data.includes.map((item) => (
+                        <li>{item}</li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+                <div class="book">
+                  <p class="price">{event.data.price}</p>
+                  {event.data.soldOut ? (
+                    <p class="sold-out">Fully booked</p>
+                  ) : (
+                    <a class="button" href={event.data.bookingUrl ?? '/contact/'}>
+                      Book a place
+                      <span class="visually-hidden">
+                        {' '}
+                        for {event.data.title} on {day}
+                      </span>
+                    </a>
+                  )}
+                </div>
+              </li>
+            );
+          })}
+        </ol>
+      ) : (
+        <p class="empty">{emptyText}</p>
+      )
+    }
+
+    {moreLink && <p class="more"><a href={moreLink.href}>{moreLink.label}</a></p>}
+  </div>
+</section>
+
+<style>
+  .head {
+    display: grid;
+    gap: 0.75rem;
+    max-width: var(--measure);
+    margin-bottom: 2rem;
+  }
+
+  .events {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-top: 2px solid var(--oat);
+  }
+
+  .event {
+    display: grid;
+    gap: 1rem;
+    padding-block: 1.5rem;
+    border-bottom: 2px solid var(--oat);
+  }
+
+  .when {
+    display: grid;
+    line-height: 1.25;
+  }
+
+  .weekday {
+    font-weight: 700;
+  }
+
+  .date {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: var(--step-2);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: var(--forest);
+  }
+
+  .time {
+    margin-top: 0.25rem;
+  }
+
+  .what {
+    display: grid;
+    gap: 0.5rem;
+    align-content: start;
+  }
+
+  .includes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.375rem;
+    margin: 0.25rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .includes li {
+    padding: 0.125rem 0.625rem;
+    border-radius: 999px;
+    background: var(--sage-light);
+    font-size: var(--step--1);
+  }
+
+  .book {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .price {
+    font-weight: 700;
+    font-size: var(--step-1);
+  }
+
+  .sold-out {
+    font-weight: 700;
+    color: var(--tan);
+  }
+
+  .empty {
+    max-width: var(--measure);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    background: var(--oat-light);
+  }
+
+  .more {
+    margin-top: 1.5rem;
+    font-weight: 700;
+  }
+
+  @media (min-width: 56rem) {
+    .event {
+      grid-template-columns: 15rem minmax(0, 1fr) auto;
+      gap: 2.5rem;
+      align-items: start;
+    }
+
+    .book {
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-start;
+      gap: 0.75rem;
+    }
+  }
+</style>

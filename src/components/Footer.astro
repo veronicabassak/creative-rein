@@ -1,0 +1,95 @@
+---
+import { getSite, telHref } from '@/lib/site';
+
+const site = await getSite();
+---
+
+<footer class="site-footer">
+  <div class="container grid">
+    <div>
+      <p class="name">{site.name}</p>
+      <p>{site.tagline}</p>
+    </div>
+
+    <div>
+      <h2>Find us</h2>
+      <address>
+        {site.address.map((line) => <span>{line}</span>)}
+      </address>
+      <p><a href="/contact/#find-us">How to find us</a></p>
+    </div>
+
+    <div>
+      <h2>Get in touch</h2>
+      <p><a href={telHref(site.phone)}>{site.phone}</a></p>
+      <p><a href={`mailto:${site.email}`}>{site.email}</a></p>
+    </div>
+
+    <nav aria-label="Footer">
+      <h2>Pages</h2>
+      <ul>
+        {site.footerNav.map((item) => <li><a href={item.href}>{item.label}</a></li>)}
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    background: var(--forest);
+    color: var(--limewash);
+    padding-block: 3.5rem;
+    font-size: 1.0625rem;
+  }
+
+  .grid {
+    display: grid;
+    gap: 2.25rem;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  }
+
+  .name {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: -0.01em;
+  }
+
+  h2 {
+    margin-bottom: 0.5rem;
+    font-family: var(--font-body);
+    font-size: 1.0625rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    color: var(--sage-light);
+  }
+
+  address {
+    font-style: normal;
+  }
+
+  address span {
+    display: block;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.25rem;
+    color: var(--limewash);
+  }
+
+  a:hover {
+    color: var(--sage-light);
+  }
+
+  :focus-visible {
+    outline-color: var(--sage-light);
+  }
+</style>

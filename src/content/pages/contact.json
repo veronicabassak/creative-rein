@@ -1,0 +1,38 @@
+{
+  "title": "Contact us",
+  "description": "Get in touch with Creative Rein on Bathford Hill, near Bath. Phone, email, a contact form and directions to the yard.",
+  "sections": [
+    {
+      "_template": "hero",
+      "variant": "page",
+      "heading": "Contact Us",
+      "lede": "We welcome enquiries from home-educating families, and from those seeking additional opportunities for children who benefit from smaller, supportive settings.",
+      "image": {
+        "src": "/images/cathy-and-charlie.jpg",
+        "alt": "Cathy and Charlie smiling with their arms around each other in front of the stables"
+      }
+    },
+    {
+      "_template": "contactForm",
+      "id": "message",
+      "heading": "Send us a message",
+      "intro": "We'll get back to you as soon as we can. If you'd rather talk, give us a call or send a text."
+    },
+    {
+      "_template": "textPhoto",
+      "id": "find-us",
+      "heading": "How to find us",
+      "body": "Drive up Bathford Hill, past the pub on the right. Take the second turning on the left, signposted Avonvale Rugby Club, and drive to the end of the unmade road.\n\nAt the end you'll see the rugby club house. We are directly opposite, at the beginning of the bridle path.\n\nCreative Rein, Bathford Hill, Bath BA1 7SW",
+      "image": {
+        "src": "/images/map-bathford.jpg",
+        "alt": "Satellite map of Bathford with a red pin on the Creative Rein field, just north of Avonvale Rugby Football Club"
+      },
+      "imageSide": "right",
+      "background": "oat",
+      "link": {
+        "label": "Open in Google Maps",
+        "href": "https://www.google.com/maps/search/?api=1&query=Avonvale+Rugby+Football+Club+Bathford"
+      }
+    }
+  ]
+}

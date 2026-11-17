@@ -1,0 +1,285 @@
+---
+import { Image } from 'astro:assets';
+import type { SectionOf } from '@/content.config';
+import { resolveImage } from '@/lib/images';
+import { getUpcomingEvents, formatDay, formatTimeRange } from '@/lib/events';
+
+type Props = SectionOf<'hero'>;
+
+const { variant, heading, tagline, lede, image, paths, showNextEvent } = Astro.props;
+const photo = image ? resolveImage(image.src) : undefined;
+const [next] = showNextEvent ? await getUpcomingEvents(1) : [];
+---
+
+{
+  variant === 'home' ? (
+    <section class="hero hero--home">
+      <div class="container layout">
+        <div class="intro">
+          <h1>{heading}</h1>
+          {lede && <p class="lede">{lede}</p>}
+        </div>
+
+        {/* The stable-door card: a pony over the top half, what's next on the bottom half. */}
+        <div class="door">
+          {photo && image && (
+            <Image
+              class="door-top"
+              src={photo}
+              alt={image.alt}
+              widths={[420, 640, 840]}
+              sizes="(min-width: 56rem) 26rem, 100vw"
+              loading="eager"
+              fetchpriority="high"
+            />
+          )}
+          <div class="door-bottom">
+            <span class="latch" aria-hidden="true" />
+            {next ? (
+              <>
+                <p class="door-label">Next up</p>
+                <h2>{next.data.title}</h2>
+                <p>
+                  {formatDay(next.data.start)}, {formatTimeRange(next.data.start, next.data.end)}.{' '}
+                  {next.data.price}.
+                </p>
+                <a class="button" href="/bookings/#events">
+                  Book this event
+                </a>
+              </>
+            ) : (
+              <>
+                <h2>Come and see us</h2>
+                <p>Ask what is coming up, or arrange a visit to meet the ponies.</p>
+                <a class="button" href="/contact/">
+                  Get in touch
+                </a>
+              </>
+            )}
+          </div>
+        </div>
+
+        {paths.length > 0 && (
+          <ul class="paths">
+            {paths.map((path) => (
+              <li>
+                <a href={path.href}>
+                  <span>
+                    <span class="path-title">{path.title}</span>
+                    <span class="path-detail">{path.detail}</span>
+                  </span>
+                  <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+    </section>
+  ) : (
+    <section class="hero hero--page">
+      <div class:list={['container', 'page-layout', { 'has-photo': photo }]}>
+        <div class="intro">
+          <h1>{heading}</h1>
+          {tagline && <p class="tagline">{tagline}</p>}
+          {lede && <p class="lede">{lede}</p>}
+        </div>
+        {photo && image && (
+          <Image
+            class="page-photo"
+            src={photo}
+            alt={image.alt}
+            widths={[480, 720, 960, 1280]}
+            sizes="(min-width: 56rem) 40rem, 100vw"
+            loading="eager"
+            fetchpriority="high"
+          />
+        )}
+      </div>
+    </section>
+  )
+}
+
+<style>
+  .lede {
+    max-width: 35rem;
+    font-size: clamp(1.125rem, 1.05rem + 0.3vw, 1.25rem);
+    line-height: 1.5;
+  }
+
+  .intro {
+    display: grid;
+    gap: 1.25rem;
+    align-content: start;
+  }
+
+  /* Home */
+  .hero--home {
+    padding-block: clamp(1rem, 0.5rem + 2vw, 2rem) clamp(1rem, 0.5rem + 2vw, 2.5rem);
+  }
+
+  .layout {
+    display: grid;
+    gap: 1.75rem;
+  }
+
+  .door {
+    display: grid;
+    gap: 0.5rem;
+    align-content: start;
+  }
+
+  .door :global(.door-top) {
+    width: 100%;
+    aspect-ratio: 5 / 4;
+    object-fit: cover;
+    object-position: 50% 30%;
+    border-radius: var(--radius-photo) var(--radius-photo) 0 0;
+  }
+
+  .door-bottom {
+    position: relative;
+    display: grid;
+    gap: 0.5rem;
+    justify-items: start;
+    padding: 1.5rem 1.5rem 1.625rem;
+    border-radius: 0 0 var(--radius-photo) var(--radius-photo);
+    background: var(--sage);
+    color: var(--ink);
+  }
+
+  .latch {
+    position: absolute;
+    right: 1.5rem;
+    top: -0.875rem;
+    width: 3.25rem;
+    height: 1.25rem;
+    border-radius: 0.25rem;
+    background: var(--forest);
+  }
+
+  .door-label {
+    font-weight: 700;
+    font-size: 1rem;
+  }
+
+  .door-bottom h2 {
+    font-size: var(--step-1);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+  }
+
+  .door-bottom .button {
+    margin-top: 0.5rem;
+  }
+
+  .paths {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-top: 2px solid var(--oat);
+  }
+
+  .paths a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    min-height: 4.75rem;
+    padding-block: 0.75rem;
+    border-bottom: 2px solid var(--oat);
+    color: var(--ink);
+    text-decoration: none;
+  }
+
+  .paths svg {
+    flex: none;
+    color: var(--tan);
+  }
+
+  .paths a:hover .path-title {
+    text-decoration: underline;
+    text-decoration-color: var(--sage);
+    text-decoration-thickness: 3px;
+    text-underline-offset: 0.25em;
+  }
+
+  .path-title {
+    display: block;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: clamp(1.1875rem, 1.1rem + 0.4vw, 1.375rem);
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: var(--forest);
+  }
+
+  .path-detail {
+    display: block;
+    margin-top: 0.125rem;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  @media (min-width: 56rem) {
+    .layout {
+      grid-template-columns: minmax(0, 1fr) 26rem;
+      grid-template-rows: auto 1fr;
+      column-gap: clamp(2.5rem, 6vw, 5rem);
+      row-gap: 2rem;
+    }
+
+    .door {
+      grid-column: 2;
+      grid-row: 1 / span 2;
+    }
+
+    .paths {
+      grid-column: 1;
+      align-self: start;
+    }
+  }
+
+  /* Inner pages */
+  .hero--page {
+    background: var(--oat-light);
+    padding-block: clamp(2.5rem, 2rem + 3vw, 4.5rem);
+  }
+
+  .page-layout {
+    display: grid;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .tagline {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: var(--step-1);
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    color: var(--forest);
+  }
+
+  .hero--page :global(.page-photo) {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: var(--radius-photo);
+  }
+
+  @media (min-width: 56rem) {
+    .page-layout.has-photo {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+      gap: clamp(2.5rem, 5vw, 4.5rem);
+    }
+
+    .hero--page :global(.page-photo) {
+      aspect-ratio: 5 / 4;
+      max-height: 34rem;
+    }
+  }
+</style>

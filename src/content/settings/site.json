@@ -1,0 +1,27 @@
+{
+  "name": "Creative Rein",
+  "tagline": "Ride. Roam. Create.",
+  "phone": "07301 111 842",
+  "email": "hello@creativerein.co.uk",
+  "address": ["Creative Rein", "Bathford Hill", "Bath", "BA1 7SW"],
+  "mapUrl": "https://www.google.com/maps/search/?api=1&query=Avonvale+Rugby+Football+Club+Bathford",
+  "nav": [
+    { "label": "Home-Ed Club", "href": "/home-ed-club/" },
+    { "label": "Alternative Provision", "href": "/alternative-provision/" },
+    { "label": "Little Rein Club", "href": "/little-rein-club/" },
+    { "label": "Wellbeing", "href": "/mindfulness-and-wellbeing/" },
+    { "label": "Events & Parties", "href": "/events-and-pony-parties/" },
+    { "label": "Contact", "href": "/contact/" }
+  ],
+  "footerNav": [
+    { "label": "Home", "href": "/" },
+    { "label": "Home-Ed Club", "href": "/home-ed-club/" },
+    { "label": "Alternative Provision", "href": "/alternative-provision/" },
+    { "label": "Toddler, Pre-School & Reception", "href": "/little-rein-club/" },
+    { "label": "Mindfulness & Wellbeing", "href": "/mindfulness-and-wellbeing/" },
+    { "label": "Events & Pony Parties", "href": "/events-and-pony-parties/" },
+    { "label": "Bookings", "href": "/bookings/" },
+    { "label": "Contact", "href": "/contact/" }
+  ],
+  "bookButton": { "label": "Book a place", "href": "/bookings/" }
+}

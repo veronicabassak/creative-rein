@@ -1,0 +1,232 @@
+{
+  "title": "Pony experiences, home-ed club and creative arts near Bath",
+  "description": "Creative Rein brings together ponies, outdoor learning and creative arts for children in Bathford, five minutes from Bath. Home-Ed Club, alternative provision, toddler sessions, events and pony parties.",
+  "sections": [
+    {
+      "_template": "hero",
+      "variant": "home",
+      "heading": "Ponies, fresh air and making things, on a hill above Bath.",
+      "lede": "Small groups and 1-to-1 sessions for children aged 5 to 18, with toddler mornings for the little ones. No horse experience needed.",
+      "image": {
+        "src": "/images/pony-skewbald.jpg",
+        "alt": "A brown and white pony looking out over a wooden stable door"
+      },
+      "paths": [
+        {
+          "title": "I home educate",
+          "detail": "Weekly Home-Ed Club in six-week terms",
+          "href": "/home-ed-club/"
+        },
+        {
+          "title": "My child needs a different setting",
+          "detail": "Alternative provision, with EHCP and EOTAS funding where applicable",
+          "href": "/alternative-provision/"
+        },
+        {
+          "title": "I have a little one",
+          "detail": "Little Rein Club for toddlers, pre-school and reception",
+          "href": "/little-rein-club/"
+        },
+        {
+          "title": "We want a party or a day out",
+          "detail": "Pony parties from £175, seasonal events from £15 per child",
+          "href": "/events-and-pony-parties/"
+        }
+      ],
+      "showNextEvent": true
+    },
+    {
+      "_template": "textPhoto",
+      "heading": "Equine Learning. Outdoor Education. Creative Arts.",
+      "body": "Creative Rein is a home education and alternative learning environment in Bath, offering riding, outdoor learning and creative art.\n\nWe bring together horses, outdoor exploration and creative practice in a setting where everyone can discover and pursue different interests and ways of learning.\n\nWe welcome enquiries from home-educating families, and from those seeking additional opportunities for children who benefit from smaller, supportive settings.",
+      "image": {
+        "src": "/images/girl-greeting-black-pony.jpg",
+        "alt": "A girl leaning in to greet a black pony in the yard"
+      },
+      "moreImages": [
+        {
+          "src": "/images/paintbrushes-on-straw.jpg",
+          "alt": "A jar of paintbrushes and a watercolour palette on a straw bale beside a red girth"
+        },
+        {
+          "src": "/images/woodland-path.jpg",
+          "alt": "A path through a green tunnel of trees"
+        }
+      ],
+      "imageSide": "right",
+      "background": "plain"
+    },
+    {
+      "_template": "list",
+      "id": "what-we-do",
+      "heading": "Ride. Roam. Create.",
+      "style": "columns",
+      "background": "oat",
+      "items": [
+        {
+          "title": "Horses",
+          "image": {
+            "src": "/images/riding-in-the-arena.jpg",
+            "alt": "A rider in a helmet trotting a black horse around the arena"
+          },
+          "points": [
+            "Horse Riding, All Levels",
+            "Equine Learning Packages",
+            "Sensory Lessons",
+            "Mindfulness & Relaxation Sessions",
+            "Pony Walks & Adventures",
+            "Pony Detectives",
+            "Mane & Tail Makeovers",
+            "Pony Behaviour & Body Language",
+            "Horse Calm Club"
+          ]
+        },
+        {
+          "title": "Outdoor Learning",
+          "image": {
+            "src": "/images/fields-above-bathford.jpg",
+            "alt": "A wide green field with a mown path and trees under a cloudy sky"
+          },
+          "points": [
+            "Planting & Growing",
+            "Mindfulness & Relaxation Sessions",
+            "Wildlife Detectives & Challenges",
+            "Wellbeing Pony Walks",
+            "Nature Treasure Hunts",
+            "Natural Sculpture & Land Art",
+            "Outdoor Problem Solving",
+            "Learning Through Nature",
+            "Seasonal Explorers",
+            "Woodwork"
+          ]
+        },
+        {
+          "title": "Creative Arts",
+          "image": {
+            "src": "/images/art-room-paints.jpg",
+            "alt": "Bright paintings on clipboards above white drawers and jars of pens in the art room"
+          },
+          "points": [
+            "Collage & Mixed Media",
+            "Seasonal Crafts",
+            "Textile Art",
+            "Printmaking",
+            "Natural Sculptures",
+            "Design Your Own",
+            "Nature Journals",
+            "Collaborative Art Projects",
+            "Festive & Seasonal Gifts & Crafts",
+            "Creative Construction"
+          ]
+        }
+      ]
+    },
+    {
+      "_template": "textPhoto",
+      "id": "home-ed",
+      "heading": "Home Education",
+      "tagline": "Small groups, meaningful experiences",
+      "body": "Creative Rein offers term-time learning to enrich your child's journey in life. Our weekly Home-Ed Club combines creative arts, equine activities and outdoor learning. It's a place to develop, build experience and socialise.\n\nEach session has its own theme, with activities adapted to suit different ages and interests. Our small-group approach allows for a more personal experience, with time to explore individual interests as well as enjoying the social side of being part of an engaging group.\n\nNo previous horse experience is needed and riding is entirely optional. It's simply about being you.",
+      "image": {
+        "src": "/images/art-room-wide.jpg",
+        "alt": "The wooden art room, with a long table, chairs and paintings pegged along the wall"
+      },
+      "imageSide": "right",
+      "background": "plain",
+      "link": { "label": "More about Home-Ed Club", "href": "/home-ed-club/" }
+    },
+    {
+      "_template": "textPhoto",
+      "id": "alternative-provision",
+      "heading": "Alternative Provision",
+      "tagline": "A different way to learn, a different place to belong",
+      "body": "Not every child thrives in a traditional classroom. Some need a different environment, a different pace, or simply the opportunity to discover what they are capable of outside a school setting.\n\nOur approach is centred around practical, meaningful activities and opportunities to develop confidence, independence, communication and social connections.\n\nAlthough some children may enjoy being part of a small group, others may initially feel more comfortable with individual engagement. That's why we offer 1-to-1 sessions, where a child can take part without pressure.\n\nEOTAS and EHCP funding where applicable.",
+      "image": {
+        "src": "/images/pony-walk-lane.jpg",
+        "alt": "Two people leading a brown and white pony down a tree-lined lane"
+      },
+      "imageSide": "left",
+      "background": "oat",
+      "link": { "label": "More about alternative provision", "href": "/alternative-provision/" }
+    },
+    {
+      "_template": "textPhoto",
+      "id": "little-rein-club",
+      "heading": "Little Rein Club",
+      "tagline": "Toddler, Pre-School & Reception",
+      "body": "We want your child to feel safe and confident around horses: comfortable touching them, interacting with them, or simply being in their presence.\n\nOur gentle early years sessions bring together pony time, outdoor adventures, crafts and learning through play.",
+      "image": {
+        "src": "/images/toddler-and-pony.jpg",
+        "alt": "A toddler in a bobble hat standing at a stable door while a black pony leans down to sniff their hat"
+      },
+      "imageSide": "right",
+      "background": "plain",
+      "link": { "label": "More about Little Rein Club", "href": "/little-rein-club/" }
+    },
+    {
+      "_template": "gallery",
+      "id": "meet-us",
+      "heading": "Meet the Ponies, Pets & Us",
+      "layout": "grid",
+      "items": [
+        {
+          "src": "/images/pony-dark-bay.jpg",
+          "alt": "Poppet, a dark bay horse with a white star, resting her head over the stable door",
+          "name": "Poppet"
+        },
+        {
+          "src": "/images/pony-skewbald.jpg",
+          "alt": "A brown and white pony looking out of its stable",
+          "name": ""
+        },
+        {
+          "src": "/images/cathy-and-charlie.jpg",
+          "alt": "Cathy and Charlie smiling with their arms around each other in front of the stables",
+          "name": "Cathy & Charlie"
+        },
+        {
+          "src": "/images/peach.jpg",
+          "alt": "Peach, a fluffy golden chow chow, walking across a field",
+          "name": "Peach"
+        },
+        {
+          "src": "/images/pudding.jpg",
+          "alt": "Pudding, a long-haired white cat, lounging on a wooden table",
+          "name": "Pudding"
+        }
+      ]
+    },
+    {
+      "_template": "gallery",
+      "layout": "strip",
+      "items": [
+        {
+          "src": "/images/pony-resting-view.jpg",
+          "alt": "A black pony lying down in the paddock, with Bathford and the valley behind"
+        },
+        {
+          "src": "/images/ponies-eating-hay.jpg",
+          "alt": "Two horses eating hay side by side in the stable"
+        },
+        {
+          "src": "/images/tack-room.jpg",
+          "alt": "Saddles, saddle pads and red rugs hanging in the wooden tack room"
+        }
+      ]
+    },
+    {
+      "_template": "eventList",
+      "id": "whats-on",
+      "heading": "What's on",
+      "limit": 3,
+      "moreLink": { "label": "All events and pony parties", "href": "/events-and-pony-parties/" }
+    },
+    {
+      "_template": "bookingBanner",
+      "heading": "Not sure what would suit your child?",
+      "text": "Tell us a bit about them and we will suggest where to start.",
+      "button": { "label": "Get in touch", "href": "/contact/" },
+      "showContact": true
+    }
+  ]
+}

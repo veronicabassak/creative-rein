@@ -1,0 +1,95 @@
+---
+import type { SectionOf } from '@/content.config';
+import { getSite, telHref } from '@/lib/site';
+
+type Props = SectionOf<'bookingBanner'>;
+
+const { id, heading, text, button, showContact } = Astro.props;
+const site = await getSite();
+---
+
+<section id={id} class="section booking-banner">
+  <div class="container">
+    <div class="panel">
+      <div class="copy">
+        <h2>{heading}</h2>
+        {text && <p>{text}</p>}
+      </div>
+      <div class="actions">
+        {button && <a class="button" href={button.href}>{button.label}</a>}
+        {
+          showContact && (
+            <ul>
+              <li>
+                Call or text <a href={telHref(site.phone)}>{site.phone}</a>
+              </li>
+              <li>
+                Email <a href={`mailto:${site.email}`}>{site.email}</a>
+              </li>
+            </ul>
+          )
+        }
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .panel {
+    display: grid;
+    gap: 1.75rem;
+    padding: clamp(1.75rem, 1rem + 3vw, 3.5rem);
+    border-radius: var(--radius-photo);
+    background: var(--sage);
+    color: var(--ink);
+  }
+
+  .copy {
+    display: grid;
+    gap: 0.75rem;
+    max-width: var(--measure);
+  }
+
+  h2 {
+    color: var(--ink);
+  }
+
+  .actions {
+    display: grid;
+    gap: 1rem;
+    justify-items: start;
+    align-content: center;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.75rem;
+    color: var(--ink);
+    font-weight: 700;
+    overflow-wrap: anywhere;
+  }
+
+  li a:hover {
+    color: var(--forest);
+    text-decoration-thickness: 3px;
+  }
+
+  :focus-visible {
+    outline-color: var(--forest);
+  }
+
+  @media (min-width: 56rem) {
+    .panel {
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 4rem;
+      align-items: center;
+    }
+  }
+</style>

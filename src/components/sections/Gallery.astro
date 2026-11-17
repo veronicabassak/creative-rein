@@ -1,0 +1,208 @@
+---
+import { Image } from 'astro:assets';
+import type { SectionOf } from '@/content.config';
+import { resolveImage } from '@/lib/images';
+
+type Props = SectionOf<'gallery'>;
+
+const { id, heading, intro, layout, items } = Astro.props;
+---
+
+<section
+  id={id}
+  class:list={['gallery', `layout-${layout}`, heading ? 'section' : 'section-tight']}
+  aria-label={heading ? undefined : 'Photos'}
+>
+  <div class="container">
+    {
+      heading && (
+        <div class="head">
+          <h2>{heading}</h2>
+          {intro && <p>{intro}</p>}
+        </div>
+      )
+    }
+    <ul class:list={['grid', `count-${items.length}`]}>
+      {
+        items.map((item, index) => (
+          <li>
+            <figure>
+              <Image
+                src={resolveImage(item.src)}
+                alt={item.alt}
+                widths={[320, 480, 720, 1040]}
+                sizes={
+                  layout === 'mosaic' && index === 0
+                    ? '(min-width: 56rem) 40rem, 100vw'
+                    : layout === 'strip'
+                      ? '(min-width: 56rem) 25rem, 50vw'
+                      : '(min-width: 56rem) 17rem, 45vw'
+                }
+              />
+              {/* Name tag, like the ones on the stable doors. Hidden when no name is set. */}
+              {item.name && <figcaption>{item.name}</figcaption>}
+            </figure>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>
+
+<style>
+  .section-tight {
+    padding-block: clamp(1rem, 0.5rem + 2vw, 2rem);
+  }
+
+  .head {
+    display: grid;
+    gap: 0.75rem;
+    max-width: var(--measure);
+    margin-bottom: 2rem;
+  }
+
+  .grid {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  figure {
+    position: relative;
+    height: 100%;
+    margin: 0;
+  }
+
+  figure :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--radius-photo);
+  }
+
+  figcaption {
+    position: absolute;
+    left: 0.75rem;
+    bottom: -0.75rem;
+    padding: 0.25rem 0.75rem;
+    border: 2px solid var(--forest);
+    border-radius: 0.375rem;
+    background: var(--paper);
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1.0625rem;
+    color: var(--forest);
+    transform: rotate(-2deg);
+  }
+
+  li:nth-child(even) figcaption {
+    transform: rotate(1.5deg);
+  }
+
+  /* Grid: portrait tiles for ponies, pets and people. */
+  .layout-grid .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.75rem 1rem;
+  }
+
+  .layout-grid figure :global(img) {
+    aspect-ratio: 4 / 5;
+  }
+
+  /* Strip: one row that breaks up text. Scrolls sideways on phones. */
+  .layout-strip .grid {
+    grid-auto-flow: column;
+    grid-auto-columns: 72%;
+    gap: 0.75rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 0.5rem;
+  }
+
+  .layout-strip li {
+    scroll-snap-align: start;
+  }
+
+  .layout-strip figure :global(img) {
+    aspect-ratio: 4 / 5;
+  }
+
+  /* Mosaic: one large photo, smaller ones beside it. */
+  .layout-mosaic .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+
+  .layout-mosaic li:first-child {
+    grid-column: 1 / -1;
+  }
+
+  .layout-mosaic li:first-child figure :global(img) {
+    aspect-ratio: 4 / 3;
+  }
+
+  .layout-mosaic li:not(:first-child) figure :global(img) {
+    aspect-ratio: 1 / 1;
+  }
+
+  @media (min-width: 56rem) {
+    .layout-grid .grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1.5rem;
+    }
+
+    .layout-grid .grid.count-5,
+    .layout-grid .grid.count-6 {
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: 2.25rem 1.5rem;
+    }
+
+    .layout-grid .grid.count-5 li,
+    .layout-grid .grid.count-6 li {
+      grid-column: span 2;
+    }
+
+    /* Five photos: centre the second row. */
+    .layout-grid .grid.count-5 li:nth-child(4) {
+      grid-column: 2 / span 2;
+    }
+
+    .layout-strip .grid {
+      grid-auto-columns: minmax(0, 1fr);
+      overflow: visible;
+      padding-bottom: 0;
+      gap: 1rem;
+    }
+
+    .layout-strip .grid.count-2 figure :global(img) {
+      aspect-ratio: 3 / 2;
+    }
+
+    .layout-strip .grid.count-3 figure :global(img),
+    .layout-strip .grid.count-4 figure :global(img) {
+      aspect-ratio: 4 / 5;
+    }
+
+    .layout-mosaic .grid {
+      grid-template-columns: 2fr 1fr 1fr;
+      grid-template-rows: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+      height: 34rem;
+    }
+
+    .layout-mosaic li:first-child {
+      grid-column: 1;
+      grid-row: 1 / span 2;
+    }
+
+    .layout-mosaic li:first-child figure :global(img),
+    .layout-mosaic li:not(:first-child) figure :global(img) {
+      aspect-ratio: auto;
+    }
+
+    .layout-mosaic .grid.count-3 {
+      grid-template-columns: 2fr 1fr;
+    }
+  }
+</style>

@@ -1,0 +1,125 @@
+{
+  "title": "Events and pony parties",
+  "description": "Seasonal events, pony and craft birthday parties and gift vouchers at Creative Rein in Bathford, five minutes from Bath. See dates and prices and book a place.",
+  "sections": [
+    {
+      "_template": "hero",
+      "variant": "page",
+      "heading": "Special Events, Celebrations & Experiences",
+      "tagline": "A little something special at Creative Rein",
+      "lede": "From seasonal celebrations and festive fun to pony experiences and creative parties, there's always something inspiring to get involved with at Creative Rein.",
+      "image": {
+        "src": "/images/saddle-and-paints.jpg",
+        "alt": "A saddle, a jar of paintbrushes and a tin of watercolours on a straw bale, with fields behind"
+      }
+    },
+    {
+      "_template": "eventList",
+      "id": "whats-on",
+      "heading": "What's coming up?",
+      "intro": "Join us for magical celebrations, from Santa's Grotto and festive craft mornings to seasonal workshops and special events held throughout the year. Whether you're meeting the ponies, making something enchanting to take home, celebrating a birthday or enjoying a social occasion, our events bring together ponies, creativity and fun.",
+      "limit": 0
+    },
+    {
+      "_template": "list",
+      "id": "pony-parties",
+      "heading": "Pony Parties",
+      "intro": "A little pony magic. A lot of creativity. A birthday to remember.",
+      "style": "columns",
+      "background": "oat",
+      "items": [
+        {
+          "title": "Meet the Ponies",
+          "text": "Get to know our friendly ponies and discover their individual personalities.",
+          "image": {
+            "src": "/images/pony-dark-bay.jpg",
+            "alt": "Poppet, a dark bay horse with a white star, looking over her stable door"
+          }
+        },
+        {
+          "title": "Grooming & Pampering",
+          "text": "Groom and decorate a real pony. Colour their manes and sparkle their tails.",
+          "image": {
+            "src": "/images/grooming-kit.jpg",
+            "alt": "A blue grooming box full of brushes on a straw bale"
+          }
+        },
+        {
+          "title": "Pony Rides",
+          "text": "Enjoy a riding experience in the arena or out along our country woodland paths.",
+          "image": {
+            "src": "/images/riding-in-the-arena.jpg",
+            "alt": "A rider trotting a black horse around the arena"
+          }
+        }
+      ],
+      "note": "Prices start from £175 with Bugsy, our lead Shetland.",
+      "link": { "label": "Ask about a party date", "href": "/contact/" }
+    },
+    {
+      "_template": "textPhoto",
+      "id": "pony-and-craft-parties",
+      "heading": "Celebrate your child's special day with a Pony & Craft Party",
+      "tagline": "Ponies, creativity and outdoor adventures, all rolled into one unforgettable party",
+      "body": "Bring together the magic of ponies and the fun of making something wonderful. Perfect for children who love animals, enjoy getting creative, or simply want a birthday celebration with a difference.\n\nOur mixed parties combine special pony time with engaging arts and crafts activities, in a relaxed countryside setting five minutes' drive from the centre of Bath.\n\nChildren can meet and spend time with our ponies, enjoy age-appropriate pony activities and get hands-on with a choice of creative projects inspired by nature, animals and the great outdoors.\n\nFrom designing and decorating to nature-inspired crafts and colourful creations, there's plenty to spark the imagination. Each child gets the chance to make something of their own and take home a little piece of the day.\n\nOur parties offer a lovely balance of animal experiences, creativity and fresh-air fun, giving children the freedom to explore their interests.",
+      "image": {
+        "src": "/images/art-room-paints.jpg",
+        "alt": "Bright paintings on clipboards above white drawers and jars of pens in the art room"
+      },
+      "moreImages": [
+        {
+          "src": "/images/paintbrushes-on-straw.jpg",
+          "alt": "A jar of paintbrushes and a watercolour palette on a straw bale"
+        },
+        {
+          "src": "/images/girl-greeting-black-pony.jpg",
+          "alt": "A girl greeting a black pony in the yard"
+        }
+      ],
+      "imageSide": "right",
+      "background": "plain"
+    },
+    {
+      "_template": "priceList",
+      "id": "prices",
+      "heading": "Prices",
+      "items": [
+        {
+          "name": "Pony party",
+          "detail": "With Bugsy, our lead Shetland",
+          "price": "From £175"
+        },
+        {
+          "name": "Christmas Pony & Craft Party",
+          "detail": "Per child",
+          "price": "£15"
+        },
+        {
+          "name": "Gift vouchers",
+          "detail": "For any Creative Rein experience",
+          "price": "Ask us"
+        }
+      ]
+    },
+    {
+      "_template": "textPhoto",
+      "id": "gift-vouchers",
+      "heading": "Gift Vouchers",
+      "body": "Give someone a little pony magic with a Creative Rein experience voucher. From festive adventures to memorable celebrations, there's something for everyone to enjoy, at any age.\n\nKeep an eye on our upcoming events, or get in touch to ask about parties, experiences and gift vouchers.",
+      "image": {
+        "src": "/images/ponies-eating-hay.jpg",
+        "alt": "Two horses eating hay side by side in the stable"
+      },
+      "imageSide": "left",
+      "background": "oat",
+      "link": { "label": "Ask about a voucher", "href": "/contact/" }
+    },
+    {
+      "_template": "bookingBanner",
+      "heading": "Planning a party or after a voucher?",
+      "text": "Tell us the date you have in mind and how many children are coming.",
+      "button": { "label": "Get in touch", "href": "/contact/" },
+      "showContact": true
+    }
+  ]
+}

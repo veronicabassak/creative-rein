@@ -1,0 +1,178 @@
+{
+  "title": "Alternative provision near Bath: EOTAS and EHCP",
+  "description": "Small, relationship-led alternative provision near Bath, learning through horses, nature and creative arts. 1-to-1 or small group, with EHCP and EOTAS funding where applicable.",
+  "sections": [
+    {
+      "_template": "hero",
+      "variant": "page",
+      "heading": "Alternative Provision",
+      "tagline": "A different way to learn, a different place to belong",
+      "lede": "Creative Rein is a small, relationship-led equine and outdoor learning provision, combining horses, outdoor exploration and creative arts. EOTAS and EHCP funding where applicable.",
+      "image": {
+        "src": "/images/cathy-with-pony-lane.jpg",
+        "alt": "Cathy smiling as she leads a brown and white pony along a leafy path"
+      }
+    },
+    {
+      "_template": "textPhoto",
+      "id": "about",
+      "heading": "Learning at the right pace",
+      "body": "Based in the Bath area, we provide opportunities for children to engage with practical, purposeful activities in a reassuring and natural environment. Emphasis is placed on relationships, individual interests and learning at an appropriate pace.\n\nAs a family, you may be exploring a range of options, including provision linked to an EHCP, EOTAS or an individually arranged alternative education package.\n\nIt can be an overwhelming journey when assessing the best option for you and your child. We are here to help you navigate flexi-school arrangements or part-time placements by offering a professional, supportive and flexible partnership for your family, whether you join our model of education or pursue an alternative route.",
+      "image": {
+        "src": "/images/pony-walk-lane.jpg",
+        "alt": "Two people leading a brown and white pony down a tree-lined lane"
+      },
+      "imageSide": "right",
+      "background": "plain"
+    },
+    {
+      "_template": "textPhoto",
+      "id": "choice-and-freedom",
+      "heading": "We offer choice and freedom",
+      "body": "Our provision caters for children who would benefit from an alternative approach to mainstream education.\n\nWe don't have expectations, we don't have barriers; we offer choice and freedom.\n\nActivities develop from varying starting points, whether through caring for a pony, developing a unique skill, communicating a thought process or creating a piece of artwork.\n\nEvery child brings their own strengths, interests and experiences. Our aim is to create opportunities for those qualities to be recognised, developed and built upon.",
+      "image": {
+        "src": "/images/girl-greeting-black-pony.jpg",
+        "alt": "A girl leaning in to greet a black pony in the yard"
+      },
+      "imageSide": "left",
+      "background": "oat"
+    },
+    {
+      "_template": "textPhoto",
+      "id": "provision",
+      "heading": "Provision",
+      "body": "Creative Rein offers an alternative, practical and engaging environment in which children with additional needs can access learning through horses, nature and creative arts. We aim to offer a flexible approach that recognises every child is different.\n\nBefore sessions begin, the child's parent or carer will discuss their needs, interests, strengths, challenges and any relevant support requirements with us.\n\nWhere appropriate, activities can be planned around agreed outcomes identified by the family, the school or the child's EHCP.\n\nSessions can include a combination of horse-related activities, outdoor learning and creative arts, depending on the child's needs and suitability for the activities offered. The aim is to create a positive, purposeful experience where the child can take part, develop practical skills and experience success without unnecessary pressure.",
+      "image": {
+        "src": "/images/tack-room-pony.jpg",
+        "alt": "A brown and white pony with its nose in a bucket, next to saddles and red rugs in the tack room"
+      },
+      "imageSide": "right",
+      "background": "plain"
+    },
+    {
+      "_template": "list",
+      "id": "typical-session",
+      "heading": "A typical session",
+      "intro": "A typical session may include:",
+      "style": "steps",
+      "background": "oat",
+      "items": [
+        { "text": "A gentle welcome and introduction to the day's activities." },
+        { "text": "Practical horse care or an appropriate equine activity." },
+        { "text": "Outdoor exploration, nature-based learning or a practical project." },
+        { "text": "A creative activity linked to the child's interests or learning goals." },
+        { "text": "A review of the session, celebrating achievements and identifying progress." }
+      ],
+      "note": "This is a flexible framework, not a rigid timetable. Activities can be adapted to the child's needs, energy levels, engagement and agreed objectives."
+    },
+    {
+      "_template": "list",
+      "id": "activities",
+      "heading": "Each session is tailored to your child",
+      "intro": "Sessions are shaped around the child's interests, abilities, needs and agreed learning outcomes.",
+      "style": "columns",
+      "background": "plain",
+      "items": [
+        {
+          "title": "Equine-based learning and horse riding",
+          "image": {
+            "src": "/images/grooming-kit.jpg",
+            "alt": "A blue grooming box full of brushes on a straw bale"
+          },
+          "points": [
+            "Grooming, caring for and learning about ponies and horses",
+            "Understanding horse behaviour, body language and welfare",
+            "Developing responsibility through practical stable management",
+            "Building confidence through appropriate, supervised interaction with horses",
+            "Supported riding activities where suitable, safe and agreed"
+          ]
+        },
+        {
+          "title": "Forest discovery and outdoor learning",
+          "image": {
+            "src": "/images/woodland-path.jpg",
+            "alt": "A path through a green tunnel of trees"
+          },
+          "points": [
+            "Exploring and learning about the natural environment",
+            "Nature-based projects and seasonal activities",
+            "Practical, hands-on tasks that encourage curiosity and problem-solving",
+            "Developing independence, resilience and practical skills",
+            "Opportunities for movement, exploration and learning outside a classroom"
+          ]
+        },
+        {
+          "title": "Creative arts and practical projects",
+          "image": {
+            "src": "/images/art-room-paints.jpg",
+            "alt": "Bright paintings on clipboards above white drawers in the art room"
+          },
+          "points": [
+            "Drawing, painting and creating horse-inspired artwork",
+            "Nature crafts and working with natural materials",
+            "Sculpture, design and imaginative projects",
+            "Developing ideas, expressing thoughts and feelings through creative activities",
+            "Building concentration, perseverance and a sense of achievement"
+          ]
+        },
+        {
+          "title": "Personal development and emotional wellbeing",
+          "image": {
+            "src": "/images/pony-resting-view.jpg",
+            "alt": "A black pony lying down in the paddock, with Bathford and the valley behind"
+          },
+          "text": "Throughout the sessions, opportunities are created to practise communication, make choices, develop independence, take on manageable challenges and build positive relationships."
+        }
+      ]
+    },
+    {
+      "_template": "list",
+      "id": "outcomes",
+      "heading": "What the provision supports",
+      "style": "pairs",
+      "background": "oat",
+      "items": [
+        {
+          "title": "Confidence and self-esteem",
+          "text": "Experiencing success through achievable, practical activities."
+        },
+        {
+          "title": "Emotional wellbeing",
+          "text": "Accessing a quieter, supportive environment with opportunities to engage at an individual pace."
+        },
+        {
+          "title": "Communication and relationships",
+          "text": "Practising communication, trust, boundaries and interaction with a consistent adult."
+        },
+        {
+          "title": "Engagement with learning",
+          "text": "Discovering interests and developing skills through practical, meaningful experiences."
+        },
+        {
+          "title": "Independence and responsibility",
+          "text": "Making choices, completing tasks and caring for animals and equipment."
+        },
+        {
+          "title": "Concentration and perseverance",
+          "text": "Taking part in structured activities with achievable goals."
+        },
+        {
+          "title": "Physical activity and outdoor engagement",
+          "text": "Taking part in suitable movement-based activities in a natural setting."
+        },
+        {
+          "title": "Creativity and self-expression",
+          "text": "Exploring ideas and developing skills through art and practical projects."
+        }
+      ],
+      "note": "These are intended areas of development rather than guaranteed outcomes. Progress will depend on the individual child's needs, starting point, interests and level of engagement."
+    },
+    {
+      "_template": "bookingBanner",
+      "heading": "Talk to us about your child",
+      "text": "We are happy to talk through your child's needs, and how a placement could work alongside school, an EHCP or EOTAS.",
+      "button": { "label": "Get in touch", "href": "/contact/" },
+      "showContact": true
+    }
+  ]
+}

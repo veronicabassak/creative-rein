@@ -1,0 +1,55 @@
+---
+/**
+ * Plain text with blank lines between paragraphs, as Charlie types it.
+ * A line starting with "- " becomes a bullet point.
+ */
+interface Props {
+  text: string;
+  class?: string;
+}
+
+const { text, class: className } = Astro.props;
+
+type Block = { kind: 'p'; text: string } | { kind: 'ul'; items: string[] };
+
+const blocks: Block[] = text
+  .split(/\n\s*\n/)
+  .map((chunk) => chunk.trim())
+  .filter(Boolean)
+  .map((chunk) => {
+    const lines = chunk.split('\n').map((line) => line.trim());
+    if (lines.every((line) => line.startsWith('- '))) {
+      return { kind: 'ul', items: lines.map((line) => line.slice(2)) } as const;
+    }
+    return { kind: 'p', text: lines.join(' ') } as const;
+  });
+---
+
+<div class:list={['prose', className]}>
+  {
+    blocks.map((block) =>
+      block.kind === 'p' ? (
+        <p>{block.text}</p>
+      ) : (
+        <ul>
+          {block.items.map((item) => (
+            <li>{item}</li>
+          ))}
+        </ul>
+      ),
+    )
+  }
+</div>
+
+<style>
+  ul {
+    display: grid;
+    gap: 0.375rem;
+    margin: 0;
+    padding-left: 1.25rem;
+  }
+
+  li::marker {
+    color: var(--tan);
+  }
+</style>

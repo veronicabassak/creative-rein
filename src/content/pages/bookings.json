@@ -1,0 +1,30 @@
+{
+  "title": "Bookings",
+  "description": "Book a place at a Creative Rein event, or get in touch about Home-Ed Club, alternative provision, Little Rein Club, pony parties and gift vouchers.",
+  "sections": [
+    {
+      "_template": "hero",
+      "variant": "page",
+      "heading": "Book with Creative Rein",
+      "lede": "Choose an event below and click Book a place to reserve your spot. You'll get a confirmation email once you've booked.",
+      "image": {
+        "src": "/images/tack-room-pony.jpg",
+        "alt": "A brown and white pony with its nose in a bucket, next to saddles and red rugs in the tack room"
+      }
+    },
+    {
+      "_template": "eventList",
+      "id": "events",
+      "heading": "Events you can book now",
+      "limit": 0
+    },
+    {
+      "_template": "bookingBanner",
+      "id": "ask",
+      "heading": "Everything else: ask us",
+      "text": "Home-Ed Club, alternative provision, Little Rein Club, pony parties and gift vouchers are arranged with us directly. Tell us your child's age, what they enjoy and anything we should know.",
+      "button": { "label": "Send us a message", "href": "/contact/" },
+      "showContact": true
+    }
+  ]
+}
