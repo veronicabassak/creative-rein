@@ -116,8 +116,8 @@
         {
           "title": "Creative arts and practical projects",
           "image": {
-            "src": "/images/art-room-paints.jpg",
-            "alt": "Bright paintings on clipboards above white drawers in the art room"
+            "src": "/images/boy-drawing.jpeg",
+            "alt": "A boy drawing at a table in the art room"
           },
           "points": [
             "Drawing, painting and creating horse-inspired artwork",
@@ -130,7 +130,7 @@
         {
           "title": "Personal development and emotional wellbeing",
           "image": {
-            "src": "/images/pony-resting-view.jpg",
+            "src": "/images/pony-rolling-on-back.jpeg",
             "alt": "A black pony lying down in the paddock, with Bathford and the valley behind"
           },
           "text": "Throughout the sessions, opportunities are created to practise communication, make choices, develop independence, take on manageable challenges and build positive relationships."
