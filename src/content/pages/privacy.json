@@ -1,0 +1,44 @@
+{
+  "title": "Privacy notice",
+  "description": "How Creative Rein uses the personal information you send us through this website.",
+  "sections": [
+    {
+      "_template": "hero",
+      "variant": "page",
+      "heading": "Privacy notice",
+      "lede": "How we use the information you send us through this website."
+    },
+    {
+      "_template": "textPhoto",
+      "id": "who-we-are",
+      "heading": "Who we are",
+      "body": "Creative Rein, Bathford Hill, Bath BA1 7SW. If you have any questions about your information, email us at hello@creativerein.co.uk."
+    },
+    {
+      "_template": "textPhoto",
+      "id": "what-we-collect",
+      "heading": "What we collect and why",
+      "body": "When you send us a message, we receive your name, email address, phone number (if you give it), what you are interested in, and your message. Your message may include details about your child, such as their age, interests or needs. We use this only to reply to you and to plan sessions that are right for your child.\n\nWhen you book an event, our booking shop at book.creativerein.co.uk (run on Hostinger) collects your name, email address and booking details so we can confirm and manage your booking.\n\nWe use your information because you have asked us to, so that we can respond and take the steps needed to arrange a session or booking for you."
+    },
+    {
+      "_template": "textPhoto",
+      "id": "where-it-is-kept",
+      "heading": "Where it is kept",
+      "background": "oat",
+      "body": "Messages from the contact form are received through our website host, Netlify, and forwarded to our email. Bookings are kept in our Hostinger account. We do not sell or share your information with anyone else.\n\nWe keep enquiries only for as long as we need them to reply and arrange sessions, and then delete them."
+    },
+    {
+      "_template": "textPhoto",
+      "id": "cookies",
+      "heading": "Cookies",
+      "body": "This website does not use cookies or tracking, and it does not use any analytics services."
+    },
+    {
+      "_template": "textPhoto",
+      "id": "your-rights",
+      "heading": "Your rights",
+      "background": "oat",
+      "body": "You can ask us for a copy of the information we hold about you, ask us to correct it, or ask us to delete it. Just email hello@creativerein.co.uk.\n\nIf you are unhappy with how we have handled your information, you can complain to the Information Commissioner's Office at ico.org.uk."
+    }
+  ]
+}

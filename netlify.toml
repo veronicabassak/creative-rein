@@ -4,11 +4,3 @@
 
 [build.environment]
   NODE_VERSION = "22"
-
-# TEST SITE ONLY: tells search engines not to list any page.
-# Delete these four lines on launch day, when creativerein.co.uk points here,
-# or the real site will disappear from Google.
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Robots-Tag = "noindex, nofollow"

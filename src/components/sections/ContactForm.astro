@@ -75,6 +75,9 @@ const site = await getSite();
       </div>
 
       <button class="button" type="submit">Send message</button>
+      <p class="privacy">
+        We only use your details to reply to you and arrange sessions. See our <a href="/privacy/">privacy notice</a>.
+      </p>
     </form>
   </div>
 </section>
@@ -155,6 +158,10 @@ const site = await getSite();
   button {
     justify-self: start;
     cursor: pointer;
+  }
+
+  .privacy {
+    font-size: 1rem;
   }
 
   .trap {
