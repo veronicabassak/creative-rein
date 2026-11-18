@@ -83,8 +83,8 @@
           "title": "Creative Reflection",
           "text": "Part of our creative arts classroom, or you can enjoy it outside. Draw, paint, sketch, build, create, write or carve: whatever you feel and whatever you want.",
           "image": {
-            "src": "/images/paintbrushes-on-straw.jpg",
-            "alt": "A jar of paintbrushes on a straw bale"
+            "src": "/images/pottery-hands.jpeg",
+            "alt": "A person's hands working with clay"
           }
         }
       ]
@@ -94,16 +94,16 @@
       "layout": "mosaic",
       "items": [
         {
-          "src": "/images/fields-above-bathford.jpg",
-          "alt": "A wide green field with a mown path and trees under a cloudy sky"
+          "src": "/images/cathy-with-pony-lane.jpg",
+          "alt": "A woman leading a brown and white pony down a tree-lined lane"
         },
         {
           "src": "/images/berries-woods.jpeg",
           "alt": "Bright red hawthorn berries among green leaves"
         },
         {
-          "src": "/images/pony-walk-lane.jpg",
-          "alt": "Two people leading a brown and white pony down a tree-lined lane"
+          "src": "/images/fields-above-bathford.jpg",
+          "alt": "A wide green field with a mown path and trees under a cloudy sky"
         },
         {
           "src": "/images/woodland-path.jpg",
