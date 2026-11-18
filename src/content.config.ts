@@ -58,6 +58,8 @@ const textPhoto = z.object({
   /** Up to two smaller photos shown under the main one. */
   moreImages: z.array(image).max(2).default([]),
   imageSide: z.enum(['left', 'right']).default('right'),
+  /** Shape of the main photo frame. Use "portrait" for tall photos so nothing important is cut off. */
+  imageShape: z.enum(['landscape', 'portrait']).default('landscape'),
   background,
   link: link.optional(),
 });

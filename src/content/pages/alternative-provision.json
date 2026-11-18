@@ -21,11 +21,11 @@
       "body": "Based in the Bath area, we provide opportunities for children to engage with practical, purposeful activities in a reassuring and natural environment. Emphasis is placed on relationships, individual interests and learning at an appropriate pace.\n\nAs a family, you may be exploring a range of options, including provision linked to an EHCP, EOTAS or an individually arranged alternative education package.\n\nIt can be an overwhelming journey when assessing the best option for you and your child. We are here to help you navigate flexi-school arrangements or part-time placements by offering a professional, supportive and flexible partnership for your family, whether you join our model of education or pursue an alternative route.",
       "image": {
         "src": "/images/pony-walk-lane.jpg",
-        "alt": "Two people leading a brown and white pony down a tree-lined lane",
-        "focus": "top"
+        "alt": "Two people leading a brown and white pony down a tree-lined lane"
       },
       "imageSide": "right",
-      "background": "plain"
+      "background": "plain",
+      "imageShape": "portrait"
     },
     {
       "_template": "textPhoto",

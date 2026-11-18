@@ -8,7 +8,10 @@ type Props = SectionOf<'hero'>;
 
 const { variant, heading, tagline, lede, image, paths, showNextEvent } = Astro.props;
 const photo = image ? resolveImage(image.src) : undefined;
-const [next] = showNextEvent ? await getUpcomingEvents(1) : [];
+// The next event people can still book; fully booked ones are skipped.
+const [next] = showNextEvent
+  ? (await getUpcomingEvents()).filter((event) => !event.data.soldOut)
+  : [];
 ---
 
 {

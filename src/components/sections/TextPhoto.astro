@@ -6,7 +6,7 @@ import Paragraphs from '@/components/Paragraphs.astro';
 
 type Props = SectionOf<'textPhoto'>;
 
-const { id, heading, tagline, body, image, moreImages, imageSide, background, link } = Astro.props;
+const { id, heading, tagline, body, image, moreImages, imageSide, imageShape, background, link } = Astro.props;
 const photo = image ? resolveImage(image.src) : undefined;
 ---
 
@@ -22,7 +22,7 @@ const photo = image ? resolveImage(image.src) : undefined;
     </div>
     {
       photo && image && (
-        <div class:list={['photos', { 'has-more': moreImages.length > 0 }]}>
+        <div class:list={['photos', `shape-${imageShape}`, { 'has-more': moreImages.length > 0 }]}>
           <Image
             class="photo"
             src={photo}
@@ -127,6 +127,11 @@ const photo = image ? resolveImage(image.src) : undefined;
 
     .photos.has-more :global(.photo) {
       aspect-ratio: 3 / 2;
+    }
+
+    .photos.shape-portrait :global(.photo) {
+      aspect-ratio: 4 / 5;
+      max-height: 40rem;
     }
   }
 </style>
