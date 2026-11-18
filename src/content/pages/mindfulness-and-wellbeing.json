@@ -99,7 +99,8 @@
       "items": [
         {
           "src": "/images/cathy-with-pony-lane.jpg",
-          "alt": "A woman leading a brown and white pony down a tree-lined lane"
+          "alt": "A woman leading a brown and white pony down a tree-lined lane",
+          "focus": "top"
         },
         {
           "src": "/images/berries-woods.jpeg",
