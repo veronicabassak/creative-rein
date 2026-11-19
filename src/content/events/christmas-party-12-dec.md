@@ -12,5 +12,5 @@ includes:
   - Art and design
   - Lucky dip
 bookingUrl: https://book.creativerein.co.uk/christmas-pony-and-craft-party-sat-12-dec-10am-12noon
-soldOut: false
+soldOut: true
 ---
