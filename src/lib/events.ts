@@ -18,14 +18,19 @@ function ukNow(): string {
 }
 
 /**
- * Events that have not finished yet, soonest first.
+ * Events that have not finished yet: ones with places left first, then sold-out
+ * ones, each group soonest first.
  * This runs when the site is built, so a past event drops off at the next build.
  */
 export async function getUpcomingEvents(limit = 0): Promise<EventEntry[]> {
   const now = ukNow();
   const upcoming = (await getCollection('events'))
     .filter((event) => event.data.end >= now)
-    .sort((a, b) => a.data.start.localeCompare(b.data.start));
+    .sort(
+      (a, b) =>
+        Number(a.data.soldOut) - Number(b.data.soldOut) ||
+        a.data.start.localeCompare(b.data.start),
+    );
   return limit > 0 ? upcoming.slice(0, limit) : upcoming;
 }
 
