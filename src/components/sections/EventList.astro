@@ -1,5 +1,7 @@
 ---
+import { Image } from 'astro:assets';
 import type { SectionOf } from '@/content.config';
+import { resolveImage } from '@/lib/images';
 import { getUpcomingEvents, formatDay, formatTimeRange } from '@/lib/events';
 
 type Props = SectionOf<'eventList'>;
@@ -29,16 +31,27 @@ const events = await getUpcomingEvents(limit);
                   <span class="date">{rest.join(' ')}</span>
                   <span class="time">{time}</span>
                 </p>
-                <div class="what">
-                  <h3>{event.data.title}</h3>
-                  <p class="where">{event.data.location}</p>
-                  {event.data.includes.length > 0 && (
-                    <ul class="includes" aria-label="What's included">
-                      {event.data.includes.map((item) => (
-                        <li>{item}</li>
-                      ))}
-                    </ul>
+                <div class:list={['what', { 'has-image': event.data.image }]}>
+                  {event.data.image && (
+                    <Image
+                      class="poster"
+                      src={resolveImage(event.data.image.src)}
+                      alt={event.data.image.alt}
+                      widths={[160, 240, 320]}
+                      sizes="8rem"
+                    />
                   )}
+                  <div class="details">
+                    <h3>{event.data.title}</h3>
+                    <p class="where">{event.data.location}</p>
+                    {event.data.includes.length > 0 && (
+                      <ul class="includes" aria-label="What's included">
+                        {event.data.includes.map((item) => (
+                          <li>{item}</li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
                 </div>
                 <div class="book">
                   <p class="price">{event.data.price}</p>
@@ -113,8 +126,26 @@ const events = await getUpcomingEvents(limit);
 
   .what {
     display: grid;
+    gap: 1rem;
+    align-content: start;
+  }
+
+  .what.has-image {
+    grid-template-columns: 6.5rem minmax(0, 1fr);
+    align-items: start;
+  }
+
+  .details {
+    display: grid;
     gap: 0.5rem;
     align-content: start;
+  }
+
+  .what :global(.poster) {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+    box-shadow: 0 0 0 1px var(--oat);
   }
 
   .includes {
@@ -167,6 +198,11 @@ const events = await getUpcomingEvents(limit);
       grid-template-columns: 15rem minmax(0, 1fr) auto;
       gap: 2.5rem;
       align-items: start;
+    }
+
+    .what.has-image {
+      grid-template-columns: 8rem minmax(0, 1fr);
+      gap: 1.5rem;
     }
 
     .book {

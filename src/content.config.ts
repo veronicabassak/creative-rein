@@ -181,6 +181,8 @@ const events = defineCollection({
     price: z.string(),
     location: z.string().default('Creative Rein, Bathford'),
     includes: z.array(z.string()).default([]),
+    /** Optional poster or photo shown next to the event. */
+    image: image.optional(),
     /** Where the Book button goes. Leave empty to send people to the contact page. */
     bookingUrl: z.string().optional(),
     soldOut: z.boolean().default(false),
