@@ -24,7 +24,33 @@
         "focus": "top"
       },
       "imageSide": "right",
-      "background": "oat"
+      "background": "plain"
+    },
+    {
+      "_template": "list",
+      "id": "community",
+      "heading": "Share your skills with the community",
+      "intro": "Do you have something you'd love to share? We're always happy to hear from people who want to teach, run a workshop or bring something new to our community.",
+      "style": "pairs",
+      "background": "oat",
+      "items": [
+        {
+          "title": "Teach a class or workshop",
+          "text": "Art, crafts, music, outdoor skills, yoga or anything else you love. Run a one-off session or a regular class in our countryside setting."
+        },
+        {
+          "title": "Run a wellbeing session",
+          "text": "Mindfulness, movement, nature walks or quiet time with the horses, for children, grown-ups or both."
+        },
+        {
+          "title": "Host a community event",
+          "text": "A seasonal gathering, a talk, a family day or a fundraiser. We can help you plan it around the horses and ponies."
+        },
+        {
+          "title": "Something else entirely",
+          "text": "If you have an idea that brings people together, we'd love to hear it."
+        }
+      ]
     },
     {
       "_template": "contactForm",
