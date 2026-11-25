@@ -1,6 +1,6 @@
 {
-  "title": "Home-Ed Club in Bath: horses, outdoor learning and creative arts",
-  "description": "A weekly Home Education Club near Bath for children aged 5 to 18, combining horse management and riding, outdoor learning and creative art and design, in six-week terms.",
+  "title": "Home-Ed Club near Bath: horses, nature and creative arts",
+  "description": "A Home Education Club near Bath combining horses, outdoor learning and creative arts. Small groups or 1-to-1, at the right pace for every child, with EHCP and EOTAS funding where applicable.",
   "sections": [
     {
       "_template": "hero",
@@ -41,6 +41,59 @@
     },
     {
       "_template": "textPhoto",
+      "id": "every-child",
+      "heading": "Every child is welcome",
+      "tagline": "A different way to learn, a different place to belong",
+      "body": "Every child learns differently. Some love being part of a group; others prefer a quieter start, their own pace, or simply the chance to discover what they're capable of outside a classroom.\n\nEmphasis is placed on relationships, individual interests and learning at an appropriate pace. We don't have expectations, we don't have barriers; we offer choice and freedom.\n\nSome children enjoy being part of a small group. Others feel more comfortable starting on their own, so we also offer 1-to-1 sessions, where a child can take part without pressure.\n\nEvery child brings their own strengths, interests and experiences. Our aim is to create opportunities for those qualities to be recognised, developed and built upon.",
+      "image": {
+        "src": "/images/girl-horse-connection.jpeg",
+        "alt": "Girl with a horse, looking into its eyes and holding its head",
+        "focus": "top"
+      },
+      "imageSide": "left",
+      "background": "oat"
+    },
+    {
+      "_template": "textPhoto",
+      "id": "working-with-you",
+      "heading": "Working with your family",
+      "body": "Before sessions begin, we talk with you about your child: what they love, what they find tricky, and anything that helps them feel comfortable.\n\nChoosing the right setting can feel like a lot. We're happy to talk it through with you, whether you're looking for regular sessions, a flexi-school arrangement or a part-time placement.\n\nIf your child has an EHCP, activities can be planned around its agreed outcomes, and EHCP or EOTAS funding can be used where applicable.",
+      "image": {
+        "src": "/images/pony-walk-lane.jpg",
+        "alt": "Two people leading a brown and white pony down a tree-lined lane"
+      },
+      "imageSide": "right",
+      "imageShape": "portrait",
+      "background": "plain"
+    },
+    {
+      "_template": "list",
+      "id": "typical-session",
+      "heading": "A typical session",
+      "intro": "A typical session may include:",
+      "style": "steps",
+      "background": "oat",
+      "items": [
+        {
+          "text": "A gentle welcome and introduction to the day's activities."
+        },
+        {
+          "text": "Practical horse care or an appropriate equine activity."
+        },
+        {
+          "text": "Outdoor exploration, nature-based learning or a practical project."
+        },
+        {
+          "text": "A creative activity linked to the child's interests or learning goals."
+        },
+        {
+          "text": "A review of the session, celebrating achievements and identifying progress."
+        }
+      ],
+      "note": "This is a flexible framework, not a rigid timetable. Activities can be adapted to the child's needs, energy levels, engagement and agreed objectives."
+    },
+    {
+      "_template": "textPhoto",
       "id": "education",
       "heading": "Education",
       "tagline": "The freedom to experiment",
@@ -50,14 +103,14 @@
         "alt": "A path through a green tunnel of trees"
       },
       "imageSide": "left",
-      "background": "oat"
+      "background": "plain"
     },
     {
       "_template": "list",
       "id": "subjects",
       "heading": "What children learn",
       "style": "pairs",
-      "background": "oat",
+      "background": "plain",
       "items": [
         {
           "title": "English & Literacy",
@@ -79,11 +132,71 @@
       "note": "Children will develop independence, problem solving and friendships in a welcoming small-group environment. We want everyone to feel comfortable, included and able to enjoy their unique time with us."
     },
     {
+      "_template": "list",
+      "id": "activities",
+      "heading": "Each session is tailored to your child",
+      "intro": "Sessions are shaped around the child's interests, abilities, needs and agreed learning outcomes.",
+      "style": "columns",
+      "background": "oat",
+      "items": [
+        {
+          "title": "Equine-based learning and horse riding",
+          "image": {
+            "src": "/images/grooming-kit.jpg",
+            "alt": "A blue grooming box full of brushes on a straw bale"
+          },
+          "points": [
+            "Grooming, caring for and learning about ponies and horses",
+            "Understanding horse behaviour, body language and welfare",
+            "Developing responsibility through practical stable management",
+            "Building confidence through appropriate, supervised interaction with horses",
+            "Supported riding activities where suitable, safe and agreed"
+          ]
+        },
+        {
+          "title": "Forest discovery and outdoor learning",
+          "image": {
+            "src": "/images/path-nature.jpeg",
+            "alt": "A narrow footpath between hedges, opening onto fields and hills"
+          },
+          "points": [
+            "Exploring and learning about the natural environment",
+            "Nature-based projects and seasonal activities",
+            "Practical, hands-on tasks that encourage curiosity and problem-solving",
+            "Developing independence, resilience and practical skills",
+            "Opportunities for movement, exploration and learning outside a classroom"
+          ]
+        },
+        {
+          "title": "Creative arts and practical projects",
+          "image": {
+            "src": "/images/boy-drawing.jpeg",
+            "alt": "A boy drawing at a table in the art room"
+          },
+          "points": [
+            "Drawing, painting and creating horse-inspired artwork",
+            "Nature crafts and working with natural materials",
+            "Sculpture, design and imaginative projects",
+            "Developing ideas, expressing thoughts and feelings through creative activities",
+            "Building concentration, perseverance and a sense of achievement"
+          ]
+        },
+        {
+          "title": "Personal development and emotional wellbeing",
+          "image": {
+            "src": "/images/pony-rolling-on-back.jpeg",
+            "alt": "A black pony lying down in the paddock, with Bathford and the valley behind"
+          },
+          "text": "Throughout the sessions, opportunities are created to practise communication, make choices, develop independence, take on manageable challenges and build positive relationships."
+        }
+      ]
+    },
+    {
       "_template": "textPhoto",
       "id": "mindfulness",
       "heading": "Mindfulness",
       "tagline": "The freedom to be you, and know that's OK",
-      "body": "If your child finds busy environments overwhelming, Creative Rein offers quiet connection sessions: mindful grooming, pony observation, grounding, and space to notice textures, sounds and sensations.\n\nWe actively encourage children to use their own coping mechanisms, and we can support them further with mindful walks, creative reflection and time connecting with the ponies.",
+      "body": "If your child sometimes finds busy places a bit much, Creative Rein offers quiet connection sessions: mindful grooming, pony observation, grounding, and space to notice textures, sounds and sensations.\n\nWe encourage children to use whatever helps them feel calm, and we can support them further with mindful walks, creative reflection and time connecting with the ponies.",
       "image": {
         "src": "/images/pony-resting-view.jpg",
         "alt": "A black pony lying down in the paddock, with Bathford and the valley behind"
@@ -91,9 +204,51 @@
       "imageSide": "right",
       "background": "plain",
       "link": {
-        "label": "Mindfulness & Wellbeing",
-        "href": "/mindfulness-and-wellbeing/"
+        "label": "Experiences & Wellbeing",
+        "href": "/experiences-and-wellbeing/"
       }
+    },
+    {
+      "_template": "list",
+      "id": "outcomes",
+      "heading": "What sessions support",
+      "style": "pairs",
+      "background": "oat",
+      "items": [
+        {
+          "title": "Confidence and self-esteem",
+          "text": "Experiencing success through achievable, practical activities."
+        },
+        {
+          "title": "Emotional wellbeing",
+          "text": "Accessing a quieter, supportive environment with opportunities to engage at an individual pace."
+        },
+        {
+          "title": "Communication and relationships",
+          "text": "Practising communication, trust, boundaries and interaction with a consistent adult."
+        },
+        {
+          "title": "Engagement with learning",
+          "text": "Discovering interests and developing skills through practical, meaningful experiences."
+        },
+        {
+          "title": "Independence and responsibility",
+          "text": "Making choices, completing tasks and caring for animals and equipment."
+        },
+        {
+          "title": "Concentration and perseverance",
+          "text": "Taking part in structured activities with achievable goals."
+        },
+        {
+          "title": "Physical activity and outdoor engagement",
+          "text": "Taking part in suitable movement-based activities in a natural setting."
+        },
+        {
+          "title": "Creativity and self-expression",
+          "text": "Exploring ideas and developing skills through art and practical projects."
+        }
+      ],
+      "note": "These are intended areas of development rather than guaranteed outcomes. Progress will depend on the individual child's needs, starting point, interests and level of engagement."
     },
     {
       "_template": "gallery",
@@ -116,7 +271,7 @@
     {
       "_template": "bookingBanner",
       "heading": "Would your child like to join?",
-      "text": "Tell us your child's age and what they enjoy, and we will tell you about the next term.",
+      "text": "Tell us your child's age, what they enjoy and anything that would help us get it right for them. We're happy to talk through anything that would help, including an EHCP or EOTAS funding.",
       "button": {
         "label": "Get in touch",
         "href": "/contact/"

@@ -1,5 +1,7 @@
-# Old Hostinger addresses -> new pages, so existing links and search results keep working.
+# Old addresses -> current pages, so existing links and search results keep working.
 /homeschooling              /home-ed-club/               301
 /preschool                  /little-rein-club/           301
-/mindfullnessandwellbeing   /mindfulness-and-wellbeing/  301
+/mindfullnessandwellbeing   /experiences-and-wellbeing/  301
+/mindfulness-and-wellbeing  /experiences-and-wellbeing/  301
+/alternative-provision      /home-ed-club/               301
 /kids-birthday-parties      /events-and-pony-parties/    301

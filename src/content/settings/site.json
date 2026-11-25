@@ -12,28 +12,24 @@
   "mapUrl": "https://www.google.com/maps/search/?api=1&query=Avonvale+Rugby+Football+Club+Bathford",
   "nav": [
     {
-      "label": "Home-Ed Club",
-      "href": "/home-ed-club/"
+      "label": "Experiences & Wellbeing",
+      "href": "/experiences-and-wellbeing/"
     },
     {
-      "label": "Alternative Provision",
-      "href": "/alternative-provision/"
+      "label": "Home-Ed Club",
+      "href": "/home-ed-club/"
     },
     {
       "label": "Little Rein Club",
       "href": "/little-rein-club/"
     },
     {
-      "label": "Wellbeing",
-      "href": "/mindfulness-and-wellbeing/"
-    },
-    {
       "label": "Events & Parties",
       "href": "/events-and-pony-parties/"
     },
     {
-      "label": "Contact",
-      "href": "/contact/"
+      "label": "Partnership",
+      "href": "/partnership/"
     }
   ],
   "footerNav": [
@@ -42,24 +38,24 @@
       "href": "/"
     },
     {
-      "label": "Home-Ed Club",
-      "href": "/home-ed-club/"
+      "label": "Experiences & Wellbeing",
+      "href": "/experiences-and-wellbeing/"
     },
     {
-      "label": "Alternative Provision",
-      "href": "/alternative-provision/"
+      "label": "Home-Ed Club",
+      "href": "/home-ed-club/"
     },
     {
       "label": "Toddler, Pre-School & Reception",
       "href": "/little-rein-club/"
     },
     {
-      "label": "Mindfulness & Wellbeing",
-      "href": "/mindfulness-and-wellbeing/"
-    },
-    {
       "label": "Events & Pony Parties",
       "href": "/events-and-pony-parties/"
+    },
+    {
+      "label": "Partnership",
+      "href": "/partnership/"
     },
     {
       "label": "Bookings",

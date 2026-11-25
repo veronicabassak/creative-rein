@@ -10,14 +10,17 @@
   --ink: #1d2b23;
   --tan: #8a5a26;
 
-  --font-display: 'Bricolage Grotesque Variable', 'Bricolage Grotesque', system-ui, sans-serif;
-  --font-body: 'Atkinson Hyperlegible', system-ui, sans-serif;
+  /* One family for everything: Atkinson Hyperlegible Next, designed by the Braille Institute
+     to be easy to read for people with low vision. Headings use its bold weights. */
+  --font-display: 'Atkinson Hyperlegible Next Variable', 'Atkinson Hyperlegible Next', system-ui, sans-serif;
+  --font-body: 'Atkinson Hyperlegible Next Variable', 'Atkinson Hyperlegible Next', system-ui, sans-serif;
 
-  --step--1: 0.9375rem;
-  --step-0: 1.125rem;
-  --step-1: 1.375rem;
-  --step-2: clamp(1.625rem, 1.3rem + 1.4vw, 2.25rem);
-  --step-3: clamp(2.25rem, 1.4rem + 3.6vw, 3.875rem);
+  /* Type sizes. Nothing on the site is smaller than --step--1 (18px). */
+  --step--1: 1.125rem;
+  --step-0: 1.25rem;
+  --step-1: 1.5rem;
+  --step-2: clamp(1.875rem, 1.5rem + 1.4vw, 2.5rem);
+  --step-3: clamp(2.375rem, 1.6rem + 3.2vw, 3.75rem);
 
   --space-section: clamp(2.75rem, 2rem + 3vw, 4.5rem);
   --gutter: clamp(1.25rem, 0.5rem + 3vw, 4.5rem);
@@ -50,7 +53,7 @@ body {
   color: var(--ink);
   font-family: var(--font-body);
   font-size: var(--step-0);
-  line-height: 1.55;
+  line-height: 1.6;
 }
 
 h1,
@@ -58,17 +61,17 @@ h2,
 h3 {
   margin: 0;
   font-family: var(--font-display);
-  font-weight: 600;
-  line-height: 1.08;
-  letter-spacing: -0.02em;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0;
   color: var(--forest);
   text-wrap: balance;
 }
 
 h1 {
   font-size: var(--step-3);
-  line-height: 1.04;
-  letter-spacing: -0.025em;
+  line-height: 1.1;
+  font-weight: 800;
 }
 
 h2 {
@@ -77,8 +80,7 @@ h2 {
 
 h3 {
   font-size: var(--step-1);
-  line-height: 1.2;
-  letter-spacing: -0.01em;
+  line-height: 1.25;
 }
 
 p {
@@ -135,7 +137,7 @@ a:hover {
   background: var(--forest);
   color: var(--limewash);
   font-family: var(--font-body);
-  font-size: 1.0625rem;
+  font-size: var(--step--1);
   font-weight: 700;
   line-height: 1.2;
   text-decoration: none;

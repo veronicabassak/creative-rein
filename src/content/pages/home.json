@@ -1,26 +1,26 @@
 {
   "title": "Pony experiences, home-ed club and creative arts near Bath",
-  "description": "Creative Rein brings together ponies, outdoor learning and creative arts for children in Bathford, five minutes from Bath. Home-Ed Club, alternative provision, toddler sessions, events and pony parties.",
+  "description": "Creative Rein brings together horses, ponies, the outdoors and creative arts in Bathford, five minutes from Bath. Experiences and wellbeing for all ages, Home-Ed Club, Little Rein Club, events and pony parties.",
   "sections": [
     {
       "_template": "hero",
       "variant": "home",
-      "heading": "Ponies, fresh air and making things, on a hill above Bath.",
-      "lede": "Small groups and 1-to-1 sessions for children aged 5 to 18, with toddler mornings for the little ones. No horse experience needed.",
+      "heading": "A calm place to learn, play and reconnect",
+      "lede": "A countryside haven above Bath, with horses, ponies and space to breathe. Come on your own, with friends or with the whole family. No horse experience needed.",
       "image": {
         "src": "/images/girl-horse-black-and-white.jpeg",
         "alt": "A girl with a horse"
       },
       "paths": [
         {
-          "title": "I home educate",
-          "detail": "Weekly Home-Ed Club in six-week terms",
-          "href": "/home-ed-club/"
+          "title": "Time with our horses and ponies",
+          "detail": "Experiences and wellbeing for all ages",
+          "href": "/experiences-and-wellbeing/"
         },
         {
-          "title": "My child needs a different setting",
-          "detail": "Alternative provision, with EHCP and EOTAS funding where applicable",
-          "href": "/alternative-provision/"
+          "title": "I home educate",
+          "detail": "Small groups and 1-to-1, at the right pace for every child",
+          "href": "/home-ed-club/"
         },
         {
           "title": "I have a little one",
@@ -29,7 +29,7 @@
         },
         {
           "title": "We want a party or a day out",
-          "detail": "Pony parties from £175, seasonal events from £15 per child",
+          "detail": "Pony parties from £250, seasonal events from £15 per child",
           "href": "/events-and-pony-parties/"
         }
       ],
@@ -37,8 +37,8 @@
     },
     {
       "_template": "textPhoto",
-      "heading": "Equine Learning. Outdoor Education. Creative Arts.",
-      "body": "Creative Rein is a home education and alternative learning environment in Bath, offering riding, outdoor learning and creative art.\n\nWe bring together horses, outdoor exploration and creative practice in a setting where everyone can discover and pursue different interests and ways of learning.\n\nWe welcome enquiries from home-educating families, and from those seeking additional opportunities for children who benefit from smaller, supportive settings.",
+      "heading": "Horses, the outdoors and creative arts",
+      "body": "Creative Rein is a place near Bath where everyone can spend time with horses and ponies, get outdoors and be creative.\n\nWe bring together horses, outdoor exploration and creative practice in a setting where everyone can discover and pursue different interests and ways of learning.\n\nEveryone is welcome: children of all ages, families, grown-ups on their own, friends and groups. We keep groups small, so everyone can go at their own pace.",
       "image": {
         "src": "/images/girl-greeting-black-pony.jpg",
         "alt": "A girl leaning in to greet a black pony in the yard"
@@ -59,7 +59,7 @@
     {
       "_template": "list",
       "id": "what-we-do",
-      "heading": "Ride. Roam. Create.",
+      "heading": "What you can do here",
       "style": "columns",
       "background": "oat",
       "items": [
@@ -123,6 +123,23 @@
     },
     {
       "_template": "textPhoto",
+      "id": "experiences",
+      "heading": "Experiences & Wellbeing",
+      "tagline": "Wellbeing for everyone",
+      "body": "Quiet connection beside our ponies and horses, mindful grooming, wonderful walks through gentle rolling hills and woodland paths, and time to draw, paint, build or simply be.\n\nWhatever your age, come and spend some time with us.",
+      "image": {
+        "src": "/images/pony-resting-view.jpg",
+        "alt": "A black pony lying down in the paddock, with Bathford and the valley behind"
+      },
+      "imageSide": "left",
+      "background": "plain",
+      "link": {
+        "label": "More about experiences and wellbeing",
+        "href": "/experiences-and-wellbeing/"
+      }
+    },
+    {
+      "_template": "textPhoto",
       "id": "home-ed",
       "heading": "Home Education",
       "tagline": "Small groups, meaningful experiences",
@@ -132,27 +149,10 @@
         "alt": "The wooden art room, with a long table, chairs and paintings pegged along the wall"
       },
       "imageSide": "right",
-      "background": "plain",
+      "background": "oat",
       "link": {
         "label": "More about Home-Ed Club",
         "href": "/home-ed-club/"
-      }
-    },
-    {
-      "_template": "textPhoto",
-      "id": "alternative-provision",
-      "heading": "Alternative Provision",
-      "tagline": "A different way to learn, a different place to belong",
-      "body": "Not every child thrives in a traditional classroom. Some need a different environment, a different pace, or simply the opportunity to discover what they are capable of outside a school setting.\n\nOur approach is centred around practical, meaningful activities and opportunities to develop confidence, independence, communication and social connections.\n\nAlthough some children may enjoy being part of a small group, others may initially feel more comfortable with individual engagement. That's why we offer 1-to-1 sessions, where a child can take part without pressure.\n\nEOTAS and EHCP funding where applicable.",
-      "image": {
-        "src": "/images/pony-walk-lane.jpg",
-        "alt": "Two people leading a brown and white pony down a tree-lined lane"
-      },
-      "imageSide": "left",
-      "background": "oat",
-      "link": {
-        "label": "More about alternative provision",
-        "href": "/alternative-provision/"
       }
     },
     {
@@ -219,8 +219,8 @@
           "alt": "Three horses eating from buckets outside the stables"
         },
         {
-          "src": "/images/pony-resting-view.jpg",
-          "alt": "A black pony lying down in the paddock, with Bathford and the valley behind"
+          "src": "/images/tack-room.jpg",
+          "alt": "Saddles, saddle pads and red rugs hanging in the wooden tack room"
         }
       ]
     },
@@ -236,8 +236,8 @@
     },
     {
       "_template": "bookingBanner",
-      "heading": "Not sure what would suit your child?",
-      "text": "Tell us a bit about them and we will suggest where to start.",
+      "heading": "Not sure where to start?",
+      "text": "Tell us who's coming and what you'd enjoy, and we will suggest where to begin.",
       "button": {
         "label": "Get in touch",
         "href": "/contact/"

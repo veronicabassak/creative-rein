@@ -1,0 +1,36 @@
+{
+  "title": "Partnership: work with Creative Rein",
+  "description": "Partner with Creative Rein near Bath: group sessions, visits, joint events and new ideas with our horses and ponies.",
+  "sections": [
+    {
+      "_template": "hero",
+      "variant": "page",
+      "heading": "Partnership",
+      "tagline": "Let's work together",
+      "lede": "We love working with people who share our values. If you'd like to partner with Creative Rein, we'd be glad to hear from you.",
+      "image": {
+        "src": "/images/three-horses-eating.jpeg",
+        "alt": "Three horses eating from buckets outside the stables"
+      }
+    },
+    {
+      "_template": "textPhoto",
+      "id": "ideas",
+      "heading": "Who we work with",
+      "body": "We're open to ideas from schools, home-education groups, wellbeing practitioners, local businesses, charities and community organisations.\n\nIt might be a regular group session, a one-off visit, a joint event or something we haven't thought of yet. Tell us what you have in mind.",
+      "image": {
+        "src": "/images/cathy-and-charlie.jpg",
+        "alt": "Cathy and Charlie smiling with their arms around each other in front of the stables",
+        "focus": "top"
+      },
+      "imageSide": "right",
+      "background": "oat"
+    },
+    {
+      "_template": "contactForm",
+      "id": "message",
+      "heading": "Tell us about your idea",
+      "intro": "Choose \"Partnership or working together\" in the form, and tell us a little about your organisation."
+    }
+  ]
+}

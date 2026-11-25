@@ -55,12 +55,12 @@ const site = await getSite();
       <div class="field">
         <label for="cf-about">What are you interested in?</label>
         <select id="cf-about" name="interested-in">
+          <option>Experiences and wellbeing</option>
           <option>Home-Ed Club</option>
-          <option>Alternative provision</option>
           <option>Little Rein Club (toddlers, pre-school and reception)</option>
-          <option>Mindfulness and wellbeing sessions</option>
           <option>A pony party or event</option>
           <option>Gift vouchers</option>
+          <option>Partnership or working together</option>
           <option>Something else</option>
         </select>
       </div>
@@ -127,7 +127,7 @@ const site = await getSite();
   .optional,
   .hint {
     font-weight: 400;
-    font-size: 1rem;
+    font-size: var(--step--1);
   }
 
   input,
@@ -161,7 +161,7 @@ const site = await getSite();
   }
 
   .privacy {
-    font-size: 1rem;
+    font-size: var(--step--1);
   }
 
   .trap {
